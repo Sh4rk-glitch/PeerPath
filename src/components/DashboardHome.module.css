@@ -1,0 +1,591 @@
+/* --- COMPLETE GRID VIEWPORT ENGINE --- */
+:global(.dashboardContainerGlobal),
+.dashboardContainer {
+  display: grid !important;
+  grid-template-columns: 280px 1fr !important;
+  width: 100% !important;
+  height: 100vh !important;
+  background: #05070f !important;
+  color: #ffffff !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* --- LEFT SIDEBAR PANEL LAYOUT --- */
+.sidebar {
+  background: #03050a !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 2rem 1.25rem !important;
+  box-sizing: border-box !important;
+  height: 100% !important;
+}
+
+.logoArea {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  margin-bottom: 2.5rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.logoText {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  color: #ffffff !important;
+}
+
+.platformBadge {
+  font-size: 0.65rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  padding: 0.2rem 0.5rem !important;
+  border-radius: 6px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  letter-spacing: 0.05em !important;
+}
+
+.navGroup {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.25rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.sectionLabel {
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+  letter-spacing: 0.1em !important;
+  padding: 0 0.5rem 0.5rem !important;
+}
+
+.navLink {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  background: none !important;
+  border: none !important;
+  color: rgba(245, 239, 230, 0.65) !important;
+  padding: 0.75rem 0.75rem !important;
+  border-radius: 12px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  transition: all 0.2s ease !important;
+}
+
+.navLink:hover,
+.navLink.active {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #ffffff !important;
+}
+
+.icon {
+  font-size: 1.1rem !important;
+  opacity: 0.7 !important;
+  width: 1.25rem !important;
+}
+
+.sidebarFooter {
+  margin-top: auto !important;
+  padding-top: 1.5rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+}
+
+.userInfo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+}
+
+.userAvatar {
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #1e293b, #0f172a) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 700 !important;
+}
+
+.userMeta {
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+.userEmail {
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.userStatus {
+  font-size: 0.75rem !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.signOutBtn {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  padding: 0.6rem !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.signOutBtn:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* --- MAIN CANVAS CONTENT HUB --- */
+.mainContent {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+.topBar {
+  height: 70px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  padding: 0 3rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-sizing: border-box !important;
+}
+
+.searchWrapper {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 12px !important;
+  width: 340px !important;
+}
+
+.searchIcon {
+  font-size: 0.9rem !important;
+  opacity: 0.4 !important;
+}
+
+.searchInput {
+  background: none !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-size: 0.9rem !important;
+  width: 100% !important;
+}
+
+.searchInput:focus {
+  outline: none !important;
+}
+
+.headerStatus {
+  display: flex !important;
+  gap: 0.75rem !important;
+}
+
+.statusBadge {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  padding: 0.4rem 0.85rem !important;
+  border-radius: 999px !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+}
+
+.scrollCanvas {
+  flex: 1 !important;
+  overflow-y: auto !important;
+  padding: 3rem !important;
+  box-sizing: border-box !important;
+}
+
+/* --- WELCOME HERO BLOCK --- */
+.welcomeBanner {
+  display: grid !important;
+  grid-template-columns: 1fr 280px !important;
+  gap: 2rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.bannerLeft {
+  background: linear-gradient(135deg, #111625 0%, #080b11 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  padding: 3rem !important;
+  border-radius: 28px !important;
+}
+
+.bannerLeft p {
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-size: 1.05rem !important;
+  margin: 0 0 1.75rem 0 !important;
+  line-height: 1.5 !important;
+}
+
+.primaryActionBtn {
+  background: #ffffff !important;
+  color: #05070f !important;
+  border: none !important;
+  padding: 0.85rem 1.75rem !important;
+  border-radius: 14px !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  cursor: pointer !important;
+}
+
+.countdownCard {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 28px !important;
+  padding: 2.5rem 2rem !important;
+  text-align: center !important;
+}
+
+.cardLabel {
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.countdownDigits {
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  margin: 1rem 0 0.25rem 0 !important;
+}
+
+.countdownDigits .unit {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.countdownSub {
+  margin: 0 !important;
+  font-size: 0.9rem !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* --- PERFORMANCE TRACKING TILES --- */
+.analyticsSection {
+  margin-bottom: 3rem !important;
+}
+
+.gridHeading {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 1.25rem 0 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.analyticsGrid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 1.5rem !important;
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  padding: 1.75rem !important;
+  border-radius: 20px !important;
+}
+
+.statLabel {
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.statValue {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin: 0.5rem 0 0.25rem 0 !important;
+}
+
+.statDetail {
+  font-size: 0.82rem !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* --- LOWER ROADMAP GRID SEGMENTS --- */
+.studyPlanRow {
+  display: grid !important;
+  grid-template-columns: 1fr 280px !important;
+  gap: 2rem !important;
+}
+
+.mainPlanCard {
+  background: rgba(255, 255, 255, 0.01) !important;
+  border: 1px dashed rgba(255, 255, 255, 0.12) !important;
+  border-radius: 28px !important;
+  padding: 3rem 2rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.emptyPlanContent {
+  max-width: 440px !important;
+  text-align: center !important;
+}
+
+.illustrationPlaceholder {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 0.75rem !important;
+  font-size: 1.5rem !important;
+  color: rgba(255, 255, 255, 0.2) !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.emptyPlanContent h3 {
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+  margin: 0 0 0.5rem 0 !important;
+}
+
+.emptyPlanContent p {
+  font-size: 0.95rem !important;
+  color: rgba(255, 255, 255, 0.45) !important;
+  line-height: 1.6 !important;
+  margin: 0 0 2rem 0 !important;
+}
+
+.secondaryActionBtn {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  cursor: pointer !important;
+}
+
+.sideMetricCol {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.5rem !important;
+}
+
+.metricCard {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  padding: 1.75rem !important;
+  border-radius: 20px !important;
+}
+
+.metricValue {
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  margin: 0.35rem 0 0.25rem 0 !important;
+}
+
+/* --- USERNAME PROFILE INLINE EDITOR STYLES --- */
+.usernameEditorWrapper {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.welcomeHeading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.highlightName {
+  color: #ffffff;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255,255,255,0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.editUsernamePenIcon {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.35;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.editUsernamePenIcon:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.editInputGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.usernameInputField {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  width: 280px;
+  outline: none;
+}
+
+.usernameInputField:focus {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.saveUsernameBtn {
+  background: #ffffff;
+  color: #05070f;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* --- KINETIC ANIMATED SVG TIMELINE CANVAS --- */
+.liveTimelineVisualizer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.visualizerTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.svgContainerCanvas {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 2.5rem 1rem 3.5rem;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.timelineSvgFrame {
+  width: 100%;
+  overflow: visible;
+}
+
+.connectorPath {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 3;
+  stroke-linecap: round;
+  will-change: stroke-dashoffset;
+  transition: stroke 0.3s ease;
+}
+
+.mainPlanCard:hover .connectorPath {
+  stroke: rgba(255, 255, 255, 0.25);
+}
+
+.milestoneNode {
+  will-change: transform, opacity;
+}
+
+.nodeCircle {
+  stroke-width: 4;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.milestoneNode:hover .nodeCircle {
+  transform: scale(1.25);
+}
+
+.nodeCompleted {
+  fill: #f8f7f4;
+  stroke: #ffffff;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.4));
+}
+
+.nodeActive {
+  fill: #05070f;
+  stroke: #ffffff;
+  animation: pulseActiveNode 2s infinite ease-in-out;
+}
+
+.nodePending {
+  fill: #05070f;
+  stroke: rgba(255, 255, 255, 0.2);
+}
+
+.nodeTextLabel {
+  fill: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.nodeTextDays {
+  fill: rgba(255, 255, 255, 0.4);
+  font-size: 0.72rem;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+@keyframes pulseActiveNode {
+  0% { stroke-width: 4; }
+  50% { stroke-width: 7; stroke: rgba(255,255,255,0.8); }
+  100% { stroke-width: 4; }
+}
+
+@media (max-width: 1100px) {
+  :global(.dashboardContainerGlobal),
+  .dashboardContainer { grid-template-columns: 1fr !important; }
+  .sidebar { display: none !important; }
+  .welcomeBanner, .studyPlanRow { grid-template-columns: 1fr !important; }
+  .countdownCard, .sideMetricCol { display: none !important; }
+  .topBar, .scrollCanvas { padding: 2rem 1.5rem !important; }
+}
+
+/* Add this class parameter definition to your existing dashboard stylesheet file rules */
+.masteryValueDisplay {
+  font-variant-numeric: tabular-nums !important;
+  will-change: text-content;
+  color: #ffffff;
+}

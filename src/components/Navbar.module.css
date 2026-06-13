@@ -1,0 +1,128 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem; /* Marginally widened padding for a premium layout feel */
+  backdrop-filter: blur(18px);
+  background: rgba(7, 17, 34, 0.82);
+  color: #f5efe6;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  opacity: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* FIXED LOGO LAYER: flex: 1 expands into left margin space to hold the center line */
+.brand {
+  flex: 1; 
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+/* FIXED MENU LAYER: Stays perfectly dead-centered on the header plane */
+.menu {
+  display: flex;
+  gap: 1.5rem; /* Marginally increased space gaps between links */
+  align-items: center;
+  justify-content: center;
+}
+
+.menu a {
+  color: rgba(245, 239, 230, 0.75);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 200ms ease;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+/* FIXED ACTIONS LAYER: flex: 1 matches the left logo width exactly to ensure center balance */
+.actions {
+  flex: 1;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: flex-end; /* Anchors content cleanly to the right edge */
+}
+
+.badge {
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(245, 239, 230, 0.16);
+  border-radius: 999px;
+  color: #f5efe6;
+  font-size: 0.9rem;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Gracefully truncates long student emails */
+  white-space: nowrap;
+}
+
+.button,
+.buttonPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.button {
+  color: #f5efe6;
+  border: 1px solid rgba(245, 239, 230, 0.2);
+  background: transparent;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.button:hover,
+.buttonPrimary:hover {
+  transform: translateY(-1px);
+}
+
+.buttonPrimary {
+  background: #f8f7f4;
+  color: #071022;
+  border: none;
+  text-decoration: none;
+}
+
+.buttonPrimary:hover {
+  background: #ffffff;
+}
+
+/* Mobile Breakpoint Configurations */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 1rem 1.25rem;
+  }
+
+  .brand, .actions {
+    flex: initial; /* Resets widths on mobile layout matrix lines */
+  }
+
+  .menu {
+    display: none; /* Conceals navigation links context box on small mobile displays */
+  }
+}

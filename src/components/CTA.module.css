@@ -1,0 +1,113 @@
+/* Core Section Shell Layer Container Box */
+.section {
+  position: relative !important;
+  width: 100%;
+  padding: 8rem 2rem 9rem !important; /* Spacious layout block bounds matching premium branding templates */
+  background: #101827 !important; 
+  color: #f5efe6;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(245, 239, 230, 0.06);
+  color: #f5efe6;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  will-change: transform, opacity;
+}
+
+.inner h2 {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+  line-height: 1.1;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+}
+
+.inner p {
+  margin: 0 auto;
+  max-width: 620px;
+  color: rgba(245, 239, 230, 0.65);
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.primaryButton {
+  display: inline-flex;
+  margin-top: 2.5rem;
+  padding: 1.1rem 2.2rem;
+  background: #f8f7f4;
+  color: #05070f;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  will-change: transform, opacity;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.2s ease;
+}
+
+.primaryButton:hover {
+  transform: translateY(-3px) scale(1.02);
+  background: #ffffff;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.primaryButton:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+/* Kinetic layout fragment helpers protecting text boundaries from syllable collapse */
+.wordBlock {
+  display: inline-block !important;
+  white-space: nowrap !important;
+}
+
+.char {
+  display: inline-block !important;
+  will-change: transform, opacity;
+}
+
+.word {
+  display: inline-block !important;
+  margin-right: 0.28em !important;
+  will-change: transform, opacity;
+}
+
+/* Mobile Breakpoint Scaling Rules */
+@media (max-width: 900px) {
+  .section {
+    padding: 5rem 1.25rem 6rem !important;
+  }
+  
+  .inner h2 {
+    letter-spacing: -0.01em;
+  }
+
+  .primaryButton {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}

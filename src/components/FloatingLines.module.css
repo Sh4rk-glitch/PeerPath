@@ -1,0 +1,56 @@
+.floatingLines{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  overflow:hidden;
+  z-index:0;
+}
+
+.line{
+  position:absolute;
+  bottom:-20px;
+  width:1px;
+  border-radius:999px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.26), rgba(255,255,255,0));
+  filter:blur(0.9px);
+  animation: floatUp linear infinite;
+}
+
+.line::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.34);
+  box-shadow:0 0 14px rgba(255,255,255,0.14);
+}
+
+.glow{
+  position:absolute;
+  left:50%;
+  bottom:16%;
+  width:520px;
+  height:360px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(255,255,255,0.08), transparent 62%);
+  filter:blur(14px);
+}
+
+@keyframes floatUp{
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  18% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-280px);
+    opacity: 0;
+  }
+}

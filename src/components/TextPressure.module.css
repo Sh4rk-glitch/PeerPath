@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 200px; /* Reduced from 420px to prevent massive empty spatial collapse */
+  overflow: visible; /* Allows fluid character styling swell space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap !important; /* CRITICAL: Absolutely forbids multi-line letter splitting */
+  white-space: nowrap !important; /* CRITICAL: Forces text string to remain strictly on one horizontal path */
+  margin: 0 auto;
+  width: max-content;
+  text-align: center;
+  line-height: 1;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent container row fracturing */
+  justify-content: center;
+}
+
+.char {
+  display: inline-block;
+  white-space: pre;
+  will-change: font-variation-settings, opacity;
+}
+
+.stroke span {
+  position: relative;
+}

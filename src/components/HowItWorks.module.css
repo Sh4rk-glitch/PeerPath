@@ -1,0 +1,287 @@
+/* Scoped Isolated Root Section Setup */
+.hiw-split-section {
+  position: relative;
+  width: 100% !important;
+  height: 100vh !important;
+  background: #02040a !important;
+  color: #f5efe6 !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Absolute SVG Wave Positioning Shield Block */
+.hiw-wave-top-divider {
+  position: absolute !important;
+  top: -1px !important; /* Forces minor pixel overlap to lock out background light leakage gaps */
+  left: 0 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  line-height: 0 !important;
+  transform: rotate(180deg) !important; /* Flips path downward to capture and mask top component canvas lines */
+  z-index: 4 !important;
+}
+
+.hiw-wave-top-divider svg {
+  position: relative !important;
+  display: block !important;
+  width: calc(100% + 1.3px) !important;
+  height: 75px !important; /* Dictates wave amplitude depth thickness */
+}
+
+.hiw-wave-path {
+  fill: #02040a !important; /* Solid background tone color forces vector elements behind it to curve map organically */
+}
+
+/* Background Cyber Matrix Canvas Element */
+.hiw-cyber-canvas {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+  z-index: 1;
+  opacity: 0.75;
+}
+
+/* Ambient Atmospheric Glow Pools Behind Layout */
+.hiw-ambient-glow-left {
+  position: absolute !important;
+  width: 400px !important;
+  height: 400px !important;
+  left: -10% !important;
+  top: 20% !important;
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.05) 0%, transparent 70%) !important;
+  pointer-events: none !important;
+  z-index: 1;
+}
+
+.hiw-ambient-glow-right {
+  position: absolute !important;
+  width: 500px !important;
+  height: 500px !important;
+  right: 10% !important;
+  top: 15% !important;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.07) 0%, transparent 70%) !important;
+  pointer-events: none !important;
+  z-index: 1;
+}
+
+/* Rigid Split Grid Layout */
+.hiw-split-grid {
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  padding: 0 4rem !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  z-index: 2;
+}
+
+/* Center Separator Line */
+.hiw-split-grid::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 1px !important;
+  height: 320px !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.08) 20%,
+    rgba(255, 255, 255, 0.08) 80%,
+    transparent
+  ) !important;
+  pointer-events: none !important;
+}
+
+/* Left Side: Rigid Locked Space Box */
+.hiw-split-left {
+  flex: 0 0 44% !important;
+  width: 44% !important;
+  max-width: 44% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  box-sizing: border-box !important;
+  padding-right: 3rem !important;
+}
+
+.hiw-title-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.1rem !important;
+  box-sizing: border-box !important;
+}
+
+.hiw-split-title {
+  font-size: clamp(2.2rem, 3.4vw, 3.6rem) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.04em !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  width: 100% !important;
+  text-align: left !important;
+  margin: 0 !important;
+  white-space: pre-line !important;
+}
+
+/* Right Side: Locked Space Box */
+.hiw-split-right {
+  flex: 0 0 45% !important;
+  width: 45% !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding-left: 2rem !important;
+}
+
+.hiw-split-sticky-content {
+  width: 100% !important;
+  max-width: 520px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+.hiw-split-label {
+  display: block !important;
+  margin-bottom: 2rem !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Hard Frame Container Imposes Space Bounds on the Stacked Cards */
+.hiw-split-cards-container {
+  position: relative !important;
+  width: 100% !important;
+  height: 300px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* The Card Structure Profiles */
+.hiw-split-card {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 3rem 2.5rem !important;
+  border-radius: 28px !important;
+  background: rgba(8, 11, 20, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.7) !important;
+  box-sizing: border-box !important;
+  will-change: transform, opacity;
+  overflow: hidden !important;
+}
+
+.hiw-split-card-glow {
+  position: absolute !important;
+  top: 0 !important;
+  left: 15% !important;
+  width: 70% !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.25), transparent) !important;
+}
+
+.hiw-split-item-phase {
+  font-family: monospace !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+  color: #3b82f6 !important;
+  letter-spacing: 0.05em !important;
+}
+
+.hiw-split-item-desc {
+  margin: 0 !important;
+  font-size: 1.2rem !important;
+  line-height: 1.65 !important;
+  color: rgba(245, 239, 230, 0.85) !important;
+  text-align: left !important;
+}
+
+/* Responsive Structural Breakpoints */
+@media (max-width: 960px) {
+  .hiw-split-section {
+    height: auto !important;
+    padding: 6rem 0 !important;
+    overflow: visible !important;
+  }
+
+  .hiw-wave-top-divider {
+    display: none !important;
+  }
+
+  .hiw-split-grid {
+    flex-direction: column !important;
+    gap: 3.5rem !important;
+    padding: 0 2rem !important;
+  }
+
+  .hiw-split-grid::after {
+    display: none !important;
+  }
+
+  .hiw-split-left, .hiw-split-right {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .hiw-title-wrapper {
+    max-width: 100% !important;
+    align-items: center !important;
+  }
+
+  .hiw-split-title {
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  .hiw-split-sticky-content {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .hiw-split-cards-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    height: auto !important;
+  }
+
+  .hiw-split-card {
+    position: relative !important;
+    inset: auto !important;
+    opacity: 1 !important;
+    transform: none !important;
+    padding: 2.5rem 2rem !important;
+    align-items: center !important;
+  }
+}
