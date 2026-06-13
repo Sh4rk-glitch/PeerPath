@@ -27,7 +27,7 @@ export default function Navbar({ session, onSignOut }: Props) {
 
   return (
     <header className={`${styles.navbar} ${(mounted || scrolled) ? styles.visible : ''}`}>
-      <div className={styles.brand}>Peerpath</div>
+      <div className={styles.brand}>PeerPath</div>
       <nav className={styles.menu}>
         <a href="#hero">Home</a>
         <a href="#how-it-works">How it works</a>

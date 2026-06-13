@@ -53,7 +53,7 @@ export default function Hero() {
             GSAP controls them cleanly to prevent layout snaps. */}
         <div className={`${styles.ctaGroup} heroCtaGroup opacity-0 pointer-events-none`}>
           <a className={styles.primaryButton} href="#signin">
-            Request a magic link
+            Start Learning Now
           </a>
           <a className={styles.secondaryButton} href="#how-it-works">
             Explore how it works

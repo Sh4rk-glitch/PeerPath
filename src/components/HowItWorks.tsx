@@ -8,19 +8,19 @@ gsap.registerPlugin(ScrollTrigger)
 
 const steps = [
   {
-    phase: '01 // Method Pass',
+    phase: '01 // What is PeerPath?',
     description:
       'Peerpath combines short animations with peer-style explanations and low-pressure checks.'
   },
   {
-    phase: '02 // Knowledge Pass',
+    phase: '02 // How does it work?',
     description:
       'Concepts are broken into visual sequences that make complex ideas easier to understand.'
   },
   {
-    phase: '03 // Confidence Pass',
+    phase: '03 // Why PeerPath?',
     description:
-      'Quick checks help students identify what they know and where they need another look.'
+      'By learning through dynamic visual storytelling, you can grasp difficult subjects faster and retain them longer.'
   }
 ]
 
@@ -174,7 +174,7 @@ export default function HowItWorks() {
         <div className={styles['hiw-split-left']}>
           <div className={styles['hiw-title-wrapper']}>
             <SplitText
-              text={"Learn by seeing steps\nunfold."}
+              text={"Learn faster with \ndynamic visual \nstorytelling."}
               tag="h2"
               className={styles['hiw-split-title']}
               delay={40}

@@ -7,20 +7,20 @@ gsap.registerPlugin(ScrollTrigger)
 
 const STEPS = [
   {
-    title: 'Watch a concept animation',
-    text: 'Short visual lessons break down each idea into easy steps.'
+    title: 'See concepts in motion',
+    text: 'Short, focused animations break down complex ideas into clear, visual sequences.'
   },
   {
     title: 'Try guided practice',
     text: 'Follow along with examples that feel like peer explanations.'
   },
   {
-    title: 'Test your intuition',
-    text: 'Quick checks help you see what you remember in real time.'
+    title: 'AI Featured Recommendations',
+    text: 'Receive tailored recommendations to optimize your learning journey.'
   },
   {
     title: 'Track your progress',
-    text: 'Get personalized next steps and keep learning momentum.'
+    text: 'Detailed analytics show your mastery speed, precision curves, and review logs.'
   }
 ]
 

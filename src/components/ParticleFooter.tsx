@@ -25,11 +25,11 @@ export default function ParticleFooter() {
       </div>
 
       <div className={styles.content}>
-        <span className={styles.overline}>peerpath</span>
-        <h2>Let your ideas move with the page.</h2>
-        <p>At the end of the experience, the interface should feel alive, subtle, and premium.</p>
+        <span className={styles.overline}>Start learning now</span>
+        <h2>PeerPath</h2>
+        <p>Discover the future of personalized learning</p>
         <a className={styles.cta} href="#signin">
-          Start with a magic link
+          Get started
         </a>
       </div>
     </section>
