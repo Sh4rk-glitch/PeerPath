@@ -25,8 +25,8 @@
 
 .logoArea {
   display: flex !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
+  align-items: center !important; /* Forces the vector arrow and PeerPath text onto an identical horizontal line baseline */
+  gap: 0.65rem !important;
   margin-bottom: 2.5rem !important;
   padding-left: 0.5rem !important;
 }
@@ -344,10 +344,11 @@
   background: rgba(255, 255, 255, 0.01) !important;
   border: 1px dashed rgba(255, 255, 255, 0.12) !important;
   border-radius: 28px !important;
-  padding: 3rem 2rem !important;
+  padding: 3rem 2.5rem !important; /* FIXED: Balanced lateral boundary constraints */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  overflow: hidden;
 }
 
 .emptyPlanContent {
@@ -499,14 +500,15 @@
   width: 100%;
   background: rgba(255, 255, 255, 0.01);
   border: 1px solid rgba(255, 255, 255, 0.04);
-  padding: 2.5rem 1rem 3.5rem;
+  padding: 2.5rem 2rem 3.5rem; /* FIXED: Balanced internal card pads */
   border-radius: 20px;
   box-sizing: border-box;
 }
 
 .timelineSvgFrame {
   width: 100%;
-  overflow: visible;
+  height: auto;
+  overflow: visible !important; /* FIXED: Overrides vector crop masks globally */
 }
 
 .connectorPath {
@@ -522,19 +524,24 @@
   stroke: rgba(255, 255, 255, 0.25);
 }
 
+/* --- ADVANCED SCALE TARGET ANCHORS --- */
 .milestoneNode {
-  will-change: transform, opacity;
+  transform-origin: 0px 0px !important; /* FIXED: Anchors scale tracking over relative translate vector coords */
+  will-change: transform;
 }
 
 .nodeCircle {
   stroke-width: 4;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform-origin: center;
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), stroke-width 0.25s ease;
+  transform-origin: 0px 0px !important;
   cursor: pointer;
+  vector-effect: non-scaling-stroke; /* FIXED: Prevents outline stroke thickness dilation during expansions */
 }
 
+/* Smooth structural scale calculation pass values */
 .milestoneNode:hover .nodeCircle {
-  transform: scale(1.25);
+  transform: scale(1.25) !important;
+  stroke-width: 5px;
 }
 
 .nodeCompleted {
@@ -574,6 +581,17 @@
   100% { stroke-width: 4; }
 }
 
+/* --- TABULATION AND RESPONSIVE WRAPPERS --- */
+.xpValueDisplay,
+.streakValueDisplay,
+.accuracyValueDisplay,
+.ratingValueDisplay,
+.masteryValueDisplay {
+  font-variant-numeric: tabular-nums !important;
+  will-change: text-content;
+  color: #ffffff;
+}
+
 @media (max-width: 1100px) {
   :global(.dashboardContainerGlobal),
   .dashboardContainer { grid-template-columns: 1fr !important; }
@@ -581,11 +599,4 @@
   .welcomeBanner, .studyPlanRow { grid-template-columns: 1fr !important; }
   .countdownCard, .sideMetricCol { display: none !important; }
   .topBar, .scrollCanvas { padding: 2rem 1.5rem !important; }
-}
-
-/* Add this class parameter definition to your existing dashboard stylesheet file rules */
-.masteryValueDisplay {
-  font-variant-numeric: tabular-nums !important;
-  will-change: text-content;
-  color: #ffffff;
 }

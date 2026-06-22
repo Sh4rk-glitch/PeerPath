@@ -27,7 +27,17 @@ export default function Navbar({ session, onSignOut }: Props) {
 
   return (
     <header className={`${styles.navbar} ${(mounted || scrolled) ? styles.visible : ''}`}>
-      <div className={styles.brand}>PeerPath</div>
+      
+      {/* FIXED: Added your clean favicon logo asset directly alongside the title text */}
+      <div className={styles.brandContainer}>
+        <img 
+          src="/favicon.png" 
+          alt="PeerPath Logo" 
+          className={styles.logoIcon}
+        />
+        <div className={styles.brand}>PeerPath</div>
+      </div>
+
       <nav className={styles.menu}>
         <a href="#hero">Home</a>
         <a href="#how-it-works">How it works</a>

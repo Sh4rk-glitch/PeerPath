@@ -1,0 +1,20 @@
+.quizCard { 
+  background: #161b22; padding: 2rem; border-radius: 16px; 
+  border: 1px solid #30363d; width: 100%; max-width: 600px;
+}
+.question { color: #e6edf3; font-size: 1.1rem; margin: 0; }
+.options { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem; }
+.options button { 
+  background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; 
+  padding: 1rem; border-radius: 8px; cursor: pointer; text-align: left;
+  transition: all 0.2s ease;
+}
+.options button:hover { background: #58a6ff; color: #fff; border-color: #58a6ff; }
+.result { 
+  background: #161b22; padding: 2rem; border-radius: 16px; 
+  border: 1px solid #30363d; text-align: center; 
+}
+.resetBtn { 
+  background: #58a6ff; color: white; border: none; padding: 0.8rem 1.5rem; 
+  border-radius: 8px; cursor: pointer; margin-top: 1rem;
+}

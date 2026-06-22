@@ -22,14 +22,30 @@
   pointer-events: auto;
 }
 
-/* FIXED LOGO LAYER: flex: 1 expands into left margin space to hold the center line */
+/* FIXED BRAND CONTAINER: Replaced .brand with this wrapper so it occupies the left side */
+.brandContainer {
+  flex: 1 !important; 
+  display: flex !important;
+  align-items: center !important; /* Perfect vertical baseline alignment */
+  justify-content: flex-start !important;
+  gap: 0.65rem !important;        /* Smooth breathing room between image and text */
+  height: 100% !important;        /* Constrain container to navbar heights */
+}
+
 .brand {
-  flex: 1; 
-  display: flex;
-  justify-content: flex-start;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.12em;
+}
+
+/* TARGET SPECIFICITY FIX: Force the image to explicitly honor dimensions */
+.brandContainer img,
+.logoIcon {
+  width: 32px !important;        /* Prevents the image from expanding to native size */
+  height: 32px !important;
+  max-height: 32px !important;
+  object-fit: contain !important;
+  display: block !important;
 }
 
 /* FIXED MENU LAYER: Stays perfectly dead-centered on the header plane */
@@ -118,11 +134,18 @@
     padding: 1rem 1.25rem;
   }
 
-  .brand, .actions {
-    flex: initial; /* Resets widths on mobile layout matrix lines */
+  .brandContainer, .actions {
+    flex: initial !important; /* Resets widths on mobile layout matrix lines */
   }
 
   .menu {
     display: none; /* Conceals navigation links context box on small mobile displays */
   }
+}
+
+/* Add this class parameter definition to your existing dashboard stylesheet file rules */
+.masteryValueDisplay {
+  font-variant-numeric: tabular-nums !important;
+  will-change: text-content;
+  color: #ffffff;
 }

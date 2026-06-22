@@ -1,0 +1,114 @@
+.container {
+  padding: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+  will-change: transform, opacity;
+}
+
+.backBtn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #8b949e;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.backBtn:hover { 
+  background: rgba(255, 255, 255, 0.08); 
+  color: #fff;
+  transform: translateX(-2px);
+}
+
+.courseTitle { 
+  font-size: 2.4rem; 
+  margin: 0 0 0.5rem 0; 
+  font-weight: 800; 
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #fff 0%, #8b949e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtitle { color: #8b949e; font-size: 1.05rem; margin-bottom: 2.5rem; }
+
+.unitList { display: flex; flex-direction: column; gap: 1rem; }
+
+.unitCard {
+  background: #0d111a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.unitCard:hover {
+  border-color: rgba(88, 166, 255, 0.25);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+}
+
+.unitHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 1.4rem 2rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.25s ease;
+}
+.unitHeader:hover { background: rgba(255, 255, 255, 0.01); }
+.headerActive { background: rgba(88, 166, 255, 0.04); }
+
+.unitHeader h3 { margin: 0; font-size: 1.15rem; font-weight: 600; color: #e6edf3; }
+
+.icon { 
+  color: #8b949e; 
+  font-size: 0.7rem; 
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+/* Accordion Animation Mechanics Container */
+.accordionContent {
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #060912;
+  will-change: max-height, opacity;
+}
+
+.lessonList {
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lessonItem {
+  display: flex;
+  gap: 1.5rem;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #c9d1d9;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.lessonItem:hover {
+  background: rgba(88, 166, 255, 0.08);
+  border-color: rgba(88, 166, 255, 0.2);
+  color: #fff;
+  transform: translateX(6px);
+}
+
+.lessonId { color: #58a6ff; font-weight: 600; min-width: 40px; }
+.lessonTopic { font-weight: 500; font-size: 0.95rem; }

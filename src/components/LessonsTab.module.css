@@ -1,0 +1,44 @@
+.tabWorkspace { padding: 2rem; width: 100%; }
+
+.filterBar { display: flex; gap: 0.75rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.filterBar button {
+  background: #0d1117; border: 1px solid #30363d;
+  color: #8b949e; padding: 0.6rem 1.2rem; border-radius: 50px;
+  cursor: pointer; font-weight: 600; transition: 0.2s;
+}
+.filterBar button.active { background: #58a6ff; color: #fff; border-color: #58a6ff; }
+
+.subFilterTray { display: flex; gap: 0.5rem; margin-bottom: 2rem; }
+.subFilterTray button {
+  background: transparent; border: 1px solid #30363d; color: #8b949e;
+  padding: 0.4rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;
+}
+.subFilterTray button.active { background: #30363d; color: #fff; }
+
+.classesGrid { 
+  display: grid; 
+  /* Fixed width range prevents giant stretching */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 300px)); 
+  gap: 1.5rem; 
+  min-height: 500px;
+  justify-content: start;
+  will-change: transform;
+}
+
+.courseCard {
+  background: #161b22; border: 1px solid #30363d;
+  padding: 1.5rem; border-radius: 16px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  height: 200px; /* Fixed height for uniformity */
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.courseCard:hover { transform: translateY(-4px); border-color: #58a6ff; }
+
+.cardTitle { 
+  font-size: 1.1rem; color: #e6edf3; 
+  margin-bottom: auto; line-height: 1.4; 
+}
+
+.startLink { color: #58a6ff; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+.startLink:hover { text-decoration: underline; }

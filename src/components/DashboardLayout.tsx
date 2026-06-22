@@ -17,6 +17,9 @@ export default function DashboardLayout({ session, onSignOut }: Props) {
   const [xpPoints, setXpPoints] = useState(0)
   const [streakCount, setStreakCount] = useState(0)
 
+  // FIXED: Changed to true to permanently unlock the links in the sidebar UI
+  const ARE_SUBPAGES_RELEASED = true 
+
   useEffect(() => {
     async function loadGlobalStats() {
       if (!session?.user) return
@@ -33,13 +36,13 @@ export default function DashboardLayout({ session, onSignOut }: Props) {
           setStreakCount(profile.study_streak ?? 0)
         }
       } catch (err) {
-        console.error('Error fetching global layout headers:', err)
+        console.error('Layout tracker loading break:', err)
       } finally {
         setDbLoading(false)
       }
     }
     loadGlobalStats()
-  }, [session, location]) // Refetches when you move pages to keep your points counters fresh!
+  }, [session, location])
 
   if (dbLoading) {
     return (
@@ -51,27 +54,44 @@ export default function DashboardLayout({ session, onSignOut }: Props) {
 
   return (
     <div className={`${styles.dashboardContainer} dashboardContainerGlobal`}>
-      {/* SIDEBAR NAVIGATION PANEL */}
       <aside className={styles.sidebar}>
+        
         <div className={styles.logoArea}>
-          <span className={styles.logoText}>Peerpath</span>
-          <span className={styles.platformBadge}>Workspace</span>
+          <img 
+            src="/favicon.png" 
+            alt="PeerPath Logo" 
+            style={{ width: '28px', height: '28px', objectFit: 'contain' }} 
+          />
+          <span className={styles.logoText} style={{ marginLeft: '0.25rem' }}>PeerPath</span>
+          <span className={styles.platformBadge}>Made for students</span>
         </div>
 
         <nav className={styles.navGroup}>
-          <div className={styles.sectionLabel}>Platform</div>
+          <div className={styles.sectionLabel}>Menu</div>
           <Link to="/home" className={`${styles.navLink} ${location.pathname === '/home' ? styles.active : ''}`}>
             <span className={styles.icon}>⌂</span> Home
           </Link>
-          <Link to="/lessons" className={`${styles.navLink} ${location.pathname === '/lessons' ? styles.active : ''}`}>
-            <span className={styles.icon}>▲</span> Animated Lessons
-          </Link>
-          <Link to="/planner" className={`${styles.navLink} ${location.pathname === '/planner' ? styles.active : ''}`}>
-            <span className={styles.icon}>📅</span> Study Planner
-          </Link>
-          <Link to="/analytics" className={`${styles.navLink} ${location.pathname === '/analytics' ? styles.active : ''}`}>
-            <span className={styles.icon}>📊</span> Analytics
-          </Link>
+
+          {/* FIXED: The sidebar links will now render dynamically without hitting the lock blocking layer */}
+          {ARE_SUBPAGES_RELEASED ? (
+            <>
+              <Link to="/lessons" className={`${styles.navLink} ${location.pathname === '/lessons' ? styles.active : ''}`}>
+                <span className={styles.icon}>🎓</span> Classes & Lessons
+              </Link>
+              <Link to="/planner" className={`${styles.navLink} ${location.pathname === '/planner' ? styles.active : ''}`}>
+                <span className={styles.icon}>🗓️</span> Study Planner
+              </Link>
+            </>
+          ) : (
+            <>
+              <div className={styles.navLink} style={{ opacity: 0.25, cursor: 'not-allowed' }}>
+                <span className={styles.icon}>🎓</span> Animated Lessons (Lock)
+              </div>
+              <div className={styles.navLink} style={{ opacity: 0.25, cursor: 'not-allowed' }}>
+                <span className={styles.icon}>🗓️</span> Study Planner (Lock)
+              </div>
+            </>
+          )}
         </nav>
 
         <div className={styles.sidebarFooter}>
@@ -86,7 +106,6 @@ export default function DashboardLayout({ session, onSignOut }: Props) {
         </div>
       </aside>
 
-      {/* CORE FRAME CONTENT HUB */}
       <main className={styles.mainContent}>
         <header className={styles.topBar}>
           <div className={styles.searchWrapper}>
@@ -99,8 +118,7 @@ export default function DashboardLayout({ session, onSignOut }: Props) {
           </div>
         </header>
 
-        {/* DYNAMIC SCROLL CONTAINER CANVAS LINK OUTLET */}
-        <div className={styles.scrollCanvas}>
+        <div key={location.pathname} className={styles.scrollCanvas}>
           <Outlet />
         </div>
       </main>
