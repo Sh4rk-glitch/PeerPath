@@ -1,3 +1,5 @@
+
+
 export interface Lesson {
   id: string;
   topic: string;
@@ -1654,7 +1656,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.1",
             "topic": "5.1 Using the Mean Value Theorem",
-            "videoId": "mvt_39a82kd",
+            "videoId": "bZYTDst1MOo",
             "quiz": [
               { "q": "What are the two hypothesis requirements for the Mean Value Theorem on [a, b]?", "options": [{"text": "Continuous on [a, b], differentiable on (a, b)", "correct": true}, {"text": "Continuous on (a, b), differentiable on [a, b]", "correct": false}, {"text": "f(a) must equal f(b)", "correct": false}, {"text": "None", "correct": false}], "explanation": "MVT requires a function to be continuous on the closed interval and differentiable on the open interval." },
               { "q": "The MVT guarantees that the instantaneous rate of change equals what?", "options": [{"text": "The average rate of change", "correct": true}, {"text": "Zero", "correct": false}, {"text": "The maximum rate of change", "correct": false}, {"text": "None", "correct": false}], "explanation": "The theorem states that f'(c) = [f(b) - f(a)] / (b - a) for some c in (a, b)." },
@@ -1671,7 +1673,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.2",
             "topic": "5.2 Extreme Value Theorem, Global Versus Local Extrema, and Critical Points",
-            "videoId": "evt_883jd7s",
+            "videoId": "ZIqfI2QVLRI",
             "quiz": [
               { "q": "What does the Extreme Value Theorem guarantee?", "options": [{"text": "An absolute max and min on a closed interval", "correct": true}, {"text": "A relative max and min on an open interval", "correct": false}, {"text": "That f'(c) = 0 exists", "correct": false}, {"text": "None", "correct": false}], "explanation": "EVT guarantees both an absolute maximum and an absolute minimum for a continuous function on a closed interval." },
               { "q": "A critical point of a function f occurs where:", "options": [{"text": "f'(x) = 0 or f'(x) is undefined", "correct": true}, {"text": "f(x) = 0", "correct": false}, {"text": "f''(x) = 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "Critical points are values in the domain where the first derivative is zero or does not exist." },
@@ -1688,7 +1690,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.3",
             "topic": "5.3 Determining Intervals on Which a Function Is Increasing or Decreasing",
-            "videoId": "inc_dec_472ks8w",
+            "videoId": "kX42vSyN8Eo",
             "quiz": [
               { "q": "A function f is increasing on an interval if for all points in that interval:", "options": [{"text": "f'(x) > 0", "correct": true}, {"text": "f'(x) < 0", "correct": false}, {"text": "f'(x) = 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "A positive first derivative indicates a positive slope, meaning the function values are rising." },
               { "q": "What mathematical tool is used to find intervals of increase or decrease?", "options": [{"text": "A sign chart of the first derivative", "correct": true}, {"text": "The power rule alone", "correct": false}, {"text": "A sign chart of the original function", "correct": false}, {"text": "None", "correct": false}], "explanation": "Testing the sign of f'(x) on intervals bounded by critical points identifies where f increases or decreases." },
@@ -1705,7 +1707,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.4",
             "topic": "5.4 Using the First Derivative Test to Determine Relative (Local) Extrema",
-            "videoId": "fdt_291kd8w",
+            "videoId": "9ukMCDAhz3E",
             "quiz": [
               { "q": "According to the First Derivative Test, a local maximum occurs if f' changes from:", "options": [{"text": "Positive to negative", "correct": true}, {"text": "Negative to positive", "correct": false}, {"text": "Positive to zero", "correct": false}, {"text": "None", "correct": false}], "explanation": "When the slope changes from positive (climbing) to negative (falling), a peak is formed." },
               { "q": "According to the First Derivative Test, a local minimum occurs if f' changes from:", "options": [{"text": "Negative to positive", "correct": true}, {"text": "Positive to negative", "correct": false}, {"text": "Negative to zero", "correct": false}, {"text": "None", "correct": false}], "explanation": "When the slope changes from negative (descending) to positive (climbing), a valley is formed." },
@@ -1722,7 +1724,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.5",
             "topic": "5.5 Using the Candidates Test to Determine Absolute (Global) Extrema",
-            "videoId": "cand_test_103jd8w",
+            "videoId": "BV6d7uJ2NkQ",
             "quiz": [
               { "q": "What is the primary purpose of the Candidates Test?", "options": [{"text": "To find absolute extrema on a closed interval", "correct": true}, {"text": "To find local extrema on an open interval", "correct": false}, {"text": "To find where a function is concave up", "correct": false}, {"text": "None", "correct": false}], "explanation": "The Candidates Test is the analytical method used to satisfy the Extreme Value Theorem." },
               { "q": "Who are the 'candidates' evaluated in the Candidates Test?", "options": [{"text": "Interior critical points and the boundary endpoints", "correct": true}, {"text": "Only the critical points", "correct": false}, {"text": "Only the endpoints", "correct": false}, {"text": "None", "correct": false}], "explanation": "Absolute extrema must occur either at a critical point inside the interval or at the boundaries." },
@@ -1739,7 +1741,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.6",
             "topic": "5.6 Determining Concavity of Functions over Their Domains",
-            "videoId": "conc_382jd9w",
+            "videoId": "9-H6bRE3SOY",
             "quiz": [
               { "q": "A graph is described as concave up on an interval if:", "options": [{"text": "f''(x) > 0", "correct": true}, {"text": "f''(x) < 0", "correct": false}, {"text": "f'(x) > 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "A positive second derivative means the slope of the function is increasing, making it bend upward like a cup." },
               { "q": "A graph is described as concave down on an interval if:", "options": [{"text": "f''(x) < 0", "correct": true}, {"text": "f''(x) > 0", "correct": false}, {"text": "f'(x) < 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "A negative second derivative means the slope is decreasing, making it bend downward like a frown." },
@@ -1756,7 +1758,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.7",
             "topic": "5.7 Using the Second Derivative Test to Determine Extrema",
-            "videoId": "sdt_774kd9w",
+            "videoId": "FZV_reDw01A",
             "quiz": [
               { "q": "What is the primary objective of the Second Derivative Test?", "options": [{"text": "To classify local extrema at critical points where f'(c)=0", "correct": true}, {"text": "To find inflection points", "correct": false}, {"text": "To determine absolute maximums", "correct": false}, {"text": "None", "correct": false}], "explanation": "The test uses concavity at a specific flat spot (f'(c)=0) to determine if it's a peak or a valley." },
               { "q": "If f'(c) = 0 and f''(c) > 0, what does c represent?", "options": [{"text": "A relative minimum", "correct": true}, {"text": "A relative maximum", "correct": false}, {"text": "An inflection point", "correct": false}, {"text": "None", "correct": false}], "explanation": "A horizontal tangent on a curve that is concave up (holding water) forms a local minimum." },
@@ -1773,7 +1775,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.8",
             "topic": "5.8 Sketching Graphs of Functions and Their Derivatives",
-            "videoId": "sketch_091jd9w",
+            "videoId": "l2804R1SKkE",
             "quiz": [
               { "q": "If the graph of f'(x) is below the x-axis, the graph of f(x) must be:", "options": [{"text": "Decreasing", "correct": true}, {"text": "Increasing", "correct": false}, {"text": "Concave down", "correct": false}, {"text": "None", "correct": false}], "explanation": "Being below the x-axis means f'(x) < 0, which corresponds to a decreasing parent function." },
               { "q": "An x-intercept on the graph of f'(x) corresponds to what on f(x)?", "options": [{"text": "A critical point (where f'(x) = 0)", "correct": true}, {"text": "An inflection point", "correct": false}, {"text": "A y-intercept", "correct": false}, {"text": "None", "correct": false}], "explanation": "Where the derivative graph crosses or touches y=0 indicates locations where the parent slope is zero." },
@@ -1790,7 +1792,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.9",
             "topic": "5.9 Connecting a Function, Its First Derivative, and Its Second Derivative",
-            "videoId": "connect_271ld0w",
+            "videoId": "eckJYWSgUJ4",
             "quiz": [
               { "q": "If f(x) is concave up, what is true about the first derivative f'(x)?", "options": [{"text": "f'(x) is increasing", "correct": true}, {"text": "f'(x) is positive", "correct": false}, {"text": "f'(x) is constant", "correct": false}, {"text": "None", "correct": false}], "explanation": "Concave up dictates that f'' > 0, meaning the rate of change of f' is positive, so f' is increasing." },
               { "q": "When a particle's velocity and acceleration have the same sign, the particle is:", "options": [{"text": "Speeding up", "correct": true}, {"text": "Slowing down", "correct": false}, {"text": "At rest", "correct": false}, {"text": "None", "correct": false}], "explanation": "If velocity (f') and acceleration (f'') work together in the same direction, speed increases." },
@@ -1807,7 +1809,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.10",
             "topic": "5.10 Introduction to Optimization Problems",
-            "videoId": "opt_intro_112kd0w",
+            "videoId": "iQvx_giyCKc",
             "quiz": [
               { "q": "What is the primary objective of an optimization problem?", "options": [{"text": "To find the maximum or minimum value of a variable", "correct": true}, {"text": "To find the rate of change over time", "correct": false}, {"text": "To find the area under a curve", "correct": false}, {"text": "None", "correct": false}], "explanation": "Optimization focuses on finding the most efficient configuration (maximizing profit, minimizing area, etc.)." },
               { "q": "What is the primary equation in optimization?", "options": [{"text": "The formula for the quantity you want to maximize/minimize", "correct": true}, {"text": "The constraint equation", "correct": false}, {"text": "The Pythagorean Theorem", "correct": false}, {"text": "None", "correct": false}], "explanation": "The primary equation targets the exact value being optimized (e.g., Volume, Cost)." },
@@ -1824,7 +1826,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.11",
             "topic": "5.11 Solving Optimization Problems",
-            "videoId": "opt_solve_441kd0w",
+            "videoId": "lx8RcYcYVuU",
             "quiz": [
               { "q": "When optimizing on a closed interval, what test must you use to guarantee the absolute max/min?", "options": [{"text": "Candidates Test", "correct": true}, {"text": "First Derivative Test", "correct": false}, {"text": "Ratio Test", "correct": false}, {"text": "None", "correct": false}], "explanation": "Checking endpoints and critical points guarantees the global optimum on a closed interval." },
               { "q": "If an optimization problem has an open interval domain, how can you justify a local max is the absolute max?", "options": [{"text": "Show it is the only critical point and the function changes from increasing to decreasing", "correct": true}, {"text": "Assume it's true because it's a word problem", "correct": false}, {"text": "Evaluate the endpoints", "correct": false}, {"text": "None", "correct": false}], "explanation": "If a function has only one critical point and always increases before it and decreases after, that point must be the global maximum." },
@@ -1841,7 +1843,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "5.12",
             "topic": "5.12 Exploring Behaviors of Implicit Relations",
-            "videoId": "impl_behav_812kd0w",
+            "videoId": "cF3gYwItbWM",
             "quiz": [
               { "q": "Where does an implicit relation have a horizontal tangent line?", "options": [{"text": "Where the numerator of dy/dx equals 0 (and denominator ≠ 0)", "correct": true}, {"text": "Where the denominator of dy/dx equals 0", "correct": false}, {"text": "Where y = 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "A horizontal tangent occurs when the overall slope value is zero, requiring a zero numerator." },
               { "q": "Where does an implicit relation have a vertical tangent line?", "options": [{"text": "Where the denominator of dy/dx equals 0 (and numerator ≠ 0)", "correct": true}, {"text": "Where the numerator of dy/dx equals 0", "correct": false}, {"text": "Where x = 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "An undefined slope (vertical line) corresponds to a fraction with a division-by-zero error in the denominator." },
@@ -1863,7 +1865,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.1",
             "topic": "6.1 Exploring Accumulation of Change",
-            "videoId": "acc_chg_610k1",
+            "videoId": "cgDBFQ9GkZw",
             "quiz": [
               { "q": "If a rate of change f'(t) is given in meters/second, what are the units of the accumulation function?", "options": [{"text": "Meters", "correct": true}, {"text": "Seconds", "correct": false}, {"text": "Meters/second^2", "correct": false}, {"text": "None", "correct": false}], "explanation": "Accumulation represents the net change, which multiplies the rate unit by the independent variable unit (m/s * s = meters)." },
               { "q": "What geometric feature corresponds to the total accumulation of change under a rate curve?", "options": [{"text": "The area between the curve and the horizontal axis", "correct": true}, {"text": "The slope of the tangent line", "correct": false}, {"text": "The y-intercept", "correct": false}, {"text": "None", "correct": false}], "explanation": "Definite integrals and accumulation are structurally identical to the net area under a rate function graph." },
@@ -1880,7 +1882,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.2",
             "topic": "6.2 Approximating Areas with Riemann Sums",
-            "videoId": "riemann_620k2",
+            "videoId": "Tc4Ix6NmKZE",
             "quiz": [
               { "q": "Which Riemann sum uses the left boundary of each subinterval to evaluate the height?", "options": [{"text": "Left Riemann Sum", "correct": true}, {"text": "Right Riemann Sum", "correct": false}, {"text": "Midpoint Riemann Sum", "correct": false}, {"text": "None", "correct": false}], "explanation": "Left Riemann sums pick the x-value at the far left of each subinterval for the rectangle's height." },
               { "q": "If a function is strictly increasing, a Left Riemann sum will always produce an:", "options": [{"text": "Underapproximation", "correct": true}, {"text": "Overapproximation", "correct": false}, {"text": "Exact value", "correct": false}, {"text": "None", "correct": false}], "explanation": "Because the function climbs, the left boundary value is always the lowest value in each subinterval." },
@@ -1897,7 +1899,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.3",
             "topic": "6.3 Riemann Sums, Summation Notation, and Definite Integral Notation",
-            "videoId": "sigma_630k3",
+            "videoId": "wpbPzBcX42c",
             "quiz": [
               { "q": "The definite integral is formally defined as what limit of a Riemann sum?", "options": [{"text": "The limit as n approaches infinity of the sum of f(x_i) * Δx", "correct": true}, {"text": "The limit as n approaches 0", "correct": false}, {"text": "The limit as x approaches c", "correct": false}, {"text": "None", "correct": false}], "explanation": "An integral is defined strictly as the limit of an infinite sum of infinitesimally thin rectangles." },
               { "q": "In the limit expression, what does 'Δx' transform into when written in definite integral notation?", "options": [{"text": "dx", "correct": true}, {"text": "∫", "correct": false}, {"text": "x", "correct": false}, {"text": "None", "correct": false}], "explanation": "The discrete width Δx converges to the differential dx notation under the infinite limit." },
@@ -1914,7 +1916,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.4",
             "topic": "6.4 Fundamental Theorem of Calculus and Accumulation Functions",
-            "videoId": "ftc1_640k4",
+            "videoId": "hnSWSHGHs34",
             "quiz": [
               { "q": "The Fundamental Theorem of Calculus Part 1 establishes a direct link between:", "options": [{"text": "Differentiation and Integration as inverse operations", "correct": true}, {"text": "Limits and Continuity", "correct": false}, {"text": "Secant and Tangent lines", "correct": false}, {"text": "None", "correct": false}], "explanation": "It proves that the derivative of an accumulation function returns the original integrand function." },
               { "q": "If G(x) is the integral from a to x of f(t) dt, what is G'(x)?", "options": [{"text": "f(x)", "correct": true}, {"text": "f'(x)", "correct": false}, {"text": "f(x) - f(a)", "correct": false}, {"text": "None", "correct": false}], "explanation": "Taking the derivative simply cancels out the integral sign and swaps the variable into the function." },
@@ -1931,7 +1933,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.5",
             "topic": "6.5 Interpreting the Behavior of Accumulation Functions Involving Area",
-            "videoId": "acc_graph_650k5",
+            "videoId": "00G3lDAv6e4",
             "quiz": [
               { "q": "If g(x) is the integral from 0 to x of f(t) dt, where does g(x) have critical points?", "options": [{"text": "Where f(x) = 0 or is undefined", "correct": true}, {"text": "Where f'(x) = 0", "correct": false}, {"text": "Where f(x) matches the endpoints", "correct": false}, {"text": "None", "correct": false}], "explanation": "Since g'(x) = f(x), the critical points of g occur precisely where f(x) satisfies the critical point definition." },
               { "q": "Using g(x) = integral of f(t) dt, where does g(x) have a relative maximum?", "options": [{"text": "Where f(x) crosses the x-axis from positive to negative", "correct": true}, {"text": "Where f(x) is at a peak", "correct": false}, {"text": "Where f(x) is zero only", "correct": false}, {"text": "None", "correct": false}], "explanation": "A local max requires the derivative (f) to transition from positive to negative values." },
@@ -1948,7 +1950,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.6",
             "topic": "6.6 Calculating Properties of Definite Integrals",
-            "videoId": "int_prop_660k6",
+            "videoId": "QcHz3h81U-s",
             "quiz": [
               { "q": "What is the value of the integral from a to a of f(x) dx?", "options": [{"text": "0", "correct": true}, {"text": "1", "correct": false}, {"text": "f(a)", "correct": false}, {"text": "None", "correct": false}], "explanation": "An integral over zero width encloses zero area." },
               { "q": "How does swapping the limits of integration affect the value of the integral?", "options": [{"text": "It negates the value", "correct": true}, {"text": "It keeps it identical", "correct": false}, {"text": "It squares the value", "correct": false}, {"text": "None", "correct": false}], "explanation": "The integral from b to a is equal to negative the integral from a to b." },
@@ -1965,7 +1967,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.7",
             "topic": "6.7 Evaluating Definite Integrals Using Accumulation and Fundamental Theorem of Calculus",
-            "videoId": "ftc2_670k7",
+            "videoId": "fdJ-NdflShM",
             "quiz": [
               { "q": "What does the Fundamental Theorem of Calculus Part 2 state for evaluating integrals analytically?", "options": [{"text": "Integral from a to b of f(x) dx = F(b) - F(a), where F' = f", "correct": true}, {"text": "Integral = f'(b) - f'(a)", "correct": false}, {"text": "Integral = F(a) - F(b)", "correct": false}, {"text": "None", "correct": false}], "explanation": "To calculate a definite integral, find an antiderivative F(x) and evaluate it at the top bound minus the bottom bound." },
               { "q": "What is the definite integral from 1 to 3 of 2x dx?", "options": [{"text": "8", "correct": true}, {"text": "9", "correct": false}, {"text": "4", "correct": false}, {"text": "None", "correct": false}], "explanation": "Antiderivative of 2x is x^2. Evaluating gives 3^2 - 1^2 = 9 - 1 = 8." },
@@ -1982,7 +1984,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.8",
             "topic": "6.8 Finding Antiderivatives and Indefinite Integrals: Basic Rules and Notation",
-            "videoId": "indef_680k8",
+            "videoId": "Bl5H1DKCM90",
             "quiz": [
               { "q": "What distinguishes an indefinite integral from a definite integral notationally?", "options": [{"text": "Indefinite integrals have no boundaries (a and b) and require +C", "correct": true}, {"text": "Indefinite integrals use a different symbol", "correct": false}, {"text": "Indefinite integrals cannot be solved", "correct": false}, {"text": "None", "correct": false}], "explanation": "Indefinite integrals represent the entire general family of antiderivative functions, flagged by a missing set of limits and an explicit +C." },
               { "q": "What is the integration Power Rule for the integral of x^n dx (where n ≠ -1)?", "options": [{"text": "(x^(n+1)) / (n + 1) + C", "correct": true}, {"text": "n * x^(n-1)", "correct": false}, {"text": "x^(n+1) + C", "correct": false}, {"text": "None", "correct": false}], "explanation": "The inverse of the power rule for derivatives requires adding 1 to the power and dividing by that brand new exponent value." },
@@ -1999,7 +2001,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.9",
             "topic": "6.9 Integrating Using Substitution",
-            "videoId": "usub_690k9",
+            "videoId": "VOD8ItScG2I",
             "quiz": [
               { "q": "Integration by Substitution (U-Substitution) is essentially the reverse process of which derivative rule?", "options": [{"text": "Chain Rule", "correct": true}, {"text": "Product Rule", "correct": false}, {"text": "Quotient Rule", "correct": false}, {"text": "None", "correct": false}], "explanation": "U-substitution simplifies composite inner functions by accounting for their nested chain rule derivatives." },
               { "q": "What are you looking for when choosing a candidate for 'u' inside an integrand?", "options": [{"text": "An inner function whose derivative is also present as a factor", "correct": true}, {"text": "The easiest term to derive", "correct": false}, {"text": "The constant term", "correct": false}, {"text": "None", "correct": false}], "explanation": "The target setup requires identifying a composite grouping g(x) alongside its matching differential partner g'(x) dx." },
@@ -2016,7 +2018,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "6.10",
             "topic": "6.10 Integrating Using Long Division and Completing the Square",
-            "videoId": "adv_alg_610k10",
+            "videoId": "lgj-y22SmXk",
             "quiz": [
               { "q": "When is algebraic long division recommended before attempting to integrate a rational function?", "options": [{"text": "When the degree of the numerator is greater than or equal to the degree of the denominator", "correct": true}, {"text": "When the denominator is linear", "correct": false}, {"text": "When there are radical signs", "correct": false}, {"text": "None", "correct": false}], "explanation": "Improper rational expressions must be divided out first to split the setup into standard, easily integrable polynomial sections." },
               { "q": "If an integrand is 1 / (x^2 + 4x + 5), what algebraic technique prepares it for standard integration?", "options": [{"text": "Completing the square", "correct": true}, {"text": "Long division", "correct": false}, {"text": "U-substitution directly", "correct": false}, {"text": "None", "correct": false}], "explanation": "Completing the square turns the denominator into (x + 2)^2 + 1, configuring it for an arctan inverse trig rule lookup." },
@@ -2033,7 +2035,7 @@ export const curriculumData: Record<string, any> = {
           {
           "id": "6.11",
           "topic": "6.11 Integrating Using Integration by Parts",
-          "videoId": "ibp_6110bc",
+          "videoId": "UgwFNb9-gk0",
           "quiz": [
             { "q": "Integration by Parts (IBP) is derived from which derivative rule?", "options": [{"text": "Product Rule", "correct": true}, {"text": "Chain Rule", "correct": false}, {"text": "Quotient Rule", "correct": false}, {"text": "None", "correct": false}], "explanation": "Integrating the product rule formula $d(uv) = u\\,dv + v\\,du$ yields the IBP formula: $\\int u\\,dv = uv - \\int v\\,du$." },
             { "q": "What acronym acts as a reliable rule of thumb for selecting the 'u' substitution priority?", "options": [{"text": "LIATE (Log, Inverse Trig, Algebraic, Trig, Exponential)", "correct": true}, {"text": "LOHID", "correct": false}, {"text": "PEMDAS", "correct": false}, {"text": "None", "correct": false}], "explanation": "LIATE ranks functions from easiest-to-derive/hardest-to-integrate downward to establish 'u' selection priorities." },
@@ -2050,7 +2052,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "6.12",
           "topic": "6.12 Using Linear Partial Fractions",
-          "videoId": "part_frac_6120bc",
+          "videoId": "FF3IXYlbork",
           "quiz": [
             { "q": "What is the primary baseline structural objective when using partial fraction decomposition?", "options": [{"text": "To split a complex rational fraction with a factorable denominator into a sum of simpler fractions", "correct": true}, {"text": "To factor the numerator", "correct": false}, {"text": "To clear out all denominators", "correct": false}, {"text": "None", "correct": false}], "explanation": "Decomposition tears complex rational functions apart into easily targetable fractions that evaluate cleanly using standard log patterns." },
             { "q": "What algebraic step must be verified before performing a standard linear partial fraction setup?", "options": [{"text": "The degree of the numerator must be strictly strictly less than the degree of the denominator", "correct": true}, {"text": "The numerator must be constant", "correct": false}, {"text": "The terms must contain square roots", "correct": false}, {"text": "None", "correct": false}], "explanation": "If the expression is improper (numerator degree $\\geq$ denominator degree), you must execute polynomial long division first." },
@@ -2067,7 +2069,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "6.13",
           "topic": "6.13 Evaluating Improper Integrals",
-          "videoId": "improper_6130bc",
+          "videoId": "HQLULM7uq7Y",
           "quiz": [
             { "q": "What two unique properties can classify a definite integral as an 'improper integral'?", "options": [{"text": "Infinite integration limits, or an infinite vertical asymptote discontinuity within the integration path boundaries", "correct": true}, {"text": "Negative boundaries", "correct": false}, {"text": "Trig functions in the fractions", "correct": false}, {"text": "None", "correct": false}], "explanation": "Improper integrals are defined by either spanning across an infinite window ($[a, \\infty)$) or attempting to step directly across a vertical division-by-zero asymptote jump." },
             { "q": "How must improper integrals be formally evaluated to earn full credit on an AP FRQ?", "options": [{"text": "By rewriting the problematic boundary bound as a limit parameter variable (e.g., limit as b approaches infinity)", "correct": true}, {"text": "By plugging in infinity as a standard real number value", "correct": false}, {"text": "By guessing the convergence pattern", "correct": false}, {"text": "None", "correct": false}], "explanation": "Infinity is not a real number and cannot be directly evaluated using standard arithmetic brackets. You must use notation like $\\lim_{b \\to \\infty} \\int_a^b f(x)\\,dx$." },
@@ -2089,7 +2091,7 @@ export const curriculumData: Record<string, any> = {
             {
               "id": "7.1",
               "topic": "7.1 Modeling Situations with Differential Equations",
-              "videoId": "model_diff_710k1",
+              "videoId": "Elrcj9Ix40c",
               "quiz": [
                 { "q": "What is a differential equation?", "options": [{"text": "An equation that contains a derivative", "correct": true}, {"text": "An equation solved using only limits", "correct": false}, {"text": "A formula for the slope of a tangent line only", "correct": false}, {"text": "None", "correct": false}], "explanation": "Any equation containing a derivative or differential term (like dy/dx or y') is classified as a differential equation." },
                 { "q": "Translate: 'The rate of change of volume V with respect to time t is proportional to the square root of V.'", "options": [{"text": "dV/dt = k * sqrt(V)", "correct": true}, {"text": "V = k * sqrt(t)", "correct": false}, {"text": "dV/dt = k * V^2", "correct": false}, {"text": "None", "correct": false}], "explanation": "'Rate of change' indicates a derivative, and 'proportional to' introduces a constant of proportionality, k." },
@@ -2106,7 +2108,7 @@ export const curriculumData: Record<string, any> = {
             {
               "id": "7.2",
               "topic": "7.2 Verifying Solutions for Differential Equations",
-              "videoId": "verify_diff_720k2",
+              "videoId": "4JY40RKmC9c",
               "quiz": [
                 { "q": "How do you verify if a given function y = f(x) is a solution to a differential equation?", "options": [{"text": "Differentiate the function and substitute it and its derivatives into the equation", "correct": true}, {"text": "Find the x-intercepts of the equation", "correct": false}, {"text": "Set the equation equal to zero", "correct": false}, {"text": "None", "correct": false}], "explanation": "Verification involves a direct algebraic check to see if the function satisfies the structural conditions of the derivative equation." },
                 { "q": "Is y = e^(3x) a valid solution to the differential equation dy/dx = 3y?", "options": [{"text": "Yes, because dy/dx = 3e^(3x) and 3y = 3e^(3x)", "correct": true}, {"text": "No, it is incorrect", "correct": false}, {"text": "Only if x = 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "Substituting both sides shows that 3e^(3x) equals 3e^(3x), confirming it is a solution." },
@@ -2123,7 +2125,7 @@ export const curriculumData: Record<string, any> = {
             {
               "id": "7.3",
               "topic": "7.3 Sketching Slope Fields",
-              "videoId": "sketch_slope_730k3",
+              "videoId": "ijA_c48-AxQ",
               "quiz": [
                 { "q": "What is a slope field?", "options": [{"text": "A visual representation of a differential equation using short line segments showing slopes at grid points", "correct": true}, {"text": "A graph of the second derivative", "correct": false}, {"text": "A 3D surface plot", "correct": false}, {"text": "None", "correct": false}], "explanation": "Slope fields provide a geometric view of a differential equation's behavior by plotting localized tangent line segments across a coordinate grid." },
                 { "q": "If dy/dx = 0 at a specific coordinate point, what does the slope segment look like there?", "options": [{"text": "A flat horizontal line segment", "correct": true}, {"text": "A vertical line segment", "correct": false}, {"text": "A diagonal line segment", "correct": false}, {"text": "None", "correct": false}], "explanation": "A derivative of zero translates geometrically to a completely horizontal tangent line segment." },
@@ -2140,7 +2142,7 @@ export const curriculumData: Record<string, any> = {
             {
               "id": "7.4",
               "topic": "7.4 Reasoning Using Slope Fields",
-              "videoId": "reason_slope_740k4",
+              "videoId": "Ax03UQV9HLM",
               "quiz": [
                 { "q": "How can you distinguish between a slope field dependent only on x versus one dependent only on y?", "options": [{"text": "Look for patterns: uniform slopes in columns (only x) vs uniform slopes in rows (only y)", "correct": true}, {"text": "Check the signs at the origin", "correct": false}, {"text": "Look for asymptotes", "correct": false}, {"text": "None", "correct": false}], "explanation": "If slopes are identical vertically down columns, the derivative ignores y. If they are identical horizontally across rows, it ignores x." },
                 { "q": "If a slope field shows an entire quadrant of segments tilting downward from left to right, what does that imply?", "options": [{"text": "The derivative expression dy/dx is negative in that quadrant", "correct": true}, {"text": "The derivative is zero", "correct": false}, {"text": "The parent function is increasing", "correct": false}, {"text": "None", "correct": false}], "explanation": "Downward-sloping segments correspond to negative derivative values ($dy/dx < 0$)." },
@@ -2155,26 +2157,26 @@ export const curriculumData: Record<string, any> = {
               ]
             },
             {
-            "id": "7.5",
-            "topic": "7.5 Approximating Solutions Using Euler’s Method",
-            "videoId": "euler_750bc",
-            "quiz": [
-                { "q": "What is the primary operational objective of Euler's Method?", "options": [{"text": "To numerically approximate specific points on a particular solution curve using sequential tangent line steps", "correct": true}, {"text": "To find an exact algebraic solution", "correct": false}, {"text": "To calculate area under a curve", "correct": false}, {"text": "None", "correct": false}], "explanation": "Euler's Method is an iterative numerical procedure that uses a starting point and localized slopes to march along step-by-step and approximate an unknown function path." },
-                { "q": "What recursive formula calculates the next y-value ($y_{n+1}$) in an Euler's Method sequence?", "options": [{"text": "y_next = y_curr + Δx * (dy/dx)", "correct": true}, {"text": "y_next = y_curr + dy/dx", "correct": false}, {"text": "y_next = x_curr + Δx", "correct": false}, {"text": "None", "correct": false}], "explanation": "The linear approximation framework states that change in y equals slope times change in x: $\\Delta y = m \\cdot \\Delta x$. Adding this delta to the current y-value delivers the subsequent coordinate." },
-                { "q": "If you start at $(1, 3)$ with a step size of $\\Delta x = 0.5$ and $dy/dx = x + y$, what is the approximated next point?", "options": [{"text": "(1.5, 5)", "correct": true}, {"text": "(1.5, 4.5)", "correct": false}, {"text": "(2.0, 5)", "correct": false}, {"text": "None", "correct": false}], "explanation": "Slope $m = 1 + 3 = 4$. $\\Delta y = m \\cdot \\Delta x = 4 \\cdot 0.5 = 2$. The next x-coordinate is $1 + 0.5 = 1.5$, and the next y-coordinate is $3 + 2 = 5$, creating $(1.5, 5)$." },
-                { "q": "If an Euler approximation sequence tracks along a curve that is strictly concave up, how will the approximated values behave?", "options": [{"text": "They will be underapproximations", "correct": true}, {"text": "They will be overapproximations", "correct": false}, {"text": "They will remain perfectly accurate", "correct": false}, {"text": "None", "correct": false}], "explanation": "Because a concave up curve bends upward away from its linear approximations, straight tangent line segments will always lag below the real function curve." },
-                { "q": "If you use a negative step size ($\\Delta x = -0.1$), what direction are you traveling along the path?", "options": [{"text": "Backward (moving leftward along the x-axis)", "correct": true}, {"text": "Forward", "correct": false}, {"text": "Vertical", "correct": false}, {"text": "None", "correct": false}], "explanation": "A negative $\\Delta x$ decrements the tracking x-coordinate on each iteration loop, moving backward from right to left." },
-                { "q": "What formatting tool is highly recommended to systematically organize calculations for Euler's Method on an AP FRQ?", "options": [{"text": "A structured tracking table with columns for (x, y), dy/dx, Δx, and Δy", "correct": true}, {"text": "A sign chart matrix", "correct": false}, {"text": "A Venn diagram", "correct": false}, {"text": "None", "correct": false}], "explanation": "Maintaining an organized x | y | slope | Δy data table dramatically lowers arithmetic management errors across multi-step sequences." },
-                { "q": "True or False: If a step size $\\Delta x$ gets progressively smaller, the accuracy of Euler's approximation increases.", "options": [{"text": "True", "correct": true}, {"text": "False", "correct": false}], "explanation": "Taking more frequent, microscopic sample steps lets the piecewise tangent line align much more tightly to the shifting curvature of the true solution graph." },
-                { "q": "If $dy/dx$ depends solely on the variable $x$, Euler's Method becomes structurally equivalent to what approximation tool?", "options": [{"text": "A Left Riemann Sum area approach", "correct": true}, {"text": "A Right Riemann Sum", "correct": false}, {"text": "Newton's Method", "correct": false}, {"text": "None", "correct": false}], "explanation": "If the slope equation ignores y, accumulating $\\Delta y = f(x) \\cdot \\Delta x$ calculates an iterative sum identical to left-endpoint rectangle indexing rules." },
-                { "q": "True or False: Euler's Method can bypass vertical asymptote singularities smoothly without data distortion.", "options": [{"text": "False", "correct": true}, {"text": "True", "correct": false}], "explanation": "Because the tracking slopes blow up to infinity at a vertical asymptote, numerical algorithms fail completely if they strike or jump near non-differentiable singularity gaps." },
-                { "q": "If an initial value problem states $y(0) = 2$ and asks you to approximate $y(1)$ with 2 steps, what is your constant step width $\\Delta x$?", "options": [{"text": "0.5", "correct": true}, {"text": "1", "correct": false}, {"text": "0.2", "correct": false}, {"text": "None", "correct": false}], "explanation": "The complete distance interval delta span is $(1 - 0) = 1$. Dividing that distance across 2 target iterations yields an explicit step increment of $\\Delta x = 1 / 2 = 0.5$." }
-            ]
+              "id": "7.5",
+              "topic": "7.5 Finding General Solutions Using Separation of Variables",
+              "videoId": "UYxf-G2dgPQ",
+              "quiz": [
+                { "q": "What is the core prerequisite step in the Separation of Variables method?", "options": [{"text": "Move all y terms and 'dy' to one side, and all x terms and 'dx' to the other side via multiplication/division", "correct": true}, {"text": "Integrate immediately without moving terms", "correct": false}, {"text": "Set the derivative equal to zero", "correct": false}, {"text": "None", "correct": false}], "explanation": "You must completely separate the variables mathematically ($f(y) dy = g(x) dx$) before you can integrate both sides." },
+                { "q": "If dy/dx = x/y, what does the equation look like after separating variables?", "options": [{"text": "y dy = x dx", "correct": true}, {"text": "1/y dy = x dx", "correct": false}, {"text": "y dx = x dy", "correct": false}, {"text": "None", "correct": false}], "explanation": "Multiplying both sides by y and dx separates the variables cleanly." },
+                { "q": "If an AP student separates variables incorrectly on an FRQ, how much partial credit can they receive for the rest of the problem?", "options": [{"text": "0 points out of 5 or 6 total points", "correct": true}, {"text": "Most of the credit", "correct": false}, {"text": "Half credit", "correct": false}, {"text": "None", "correct": false}], "explanation": "The AP rubric enforces a strict guardrail: failing to separate variables correctly results in an immediate 0 for that entire part of the question." },
+                { "q": "When separating variables for dy/dx = k*y, what is the correct setup?", "options": [{"text": "1/y dy = k dx", "correct": true}, {"text": "y dy = k dx", "correct": false}, {"text": "dy = k*y dx", "correct": false}, {"text": "None", "correct": false}], "explanation": "Dividing by y isolates the y terms on the left side with dy." },
+                { "q": "What function is generated when you integrate 1/y dy?", "options": [{"text": "ln|y|", "correct": true}, {"text": "y^2 / 2", "correct": false}, {"text": "ln(y)", "correct": false}, {"text": "None", "correct": false}], "explanation": "The antiderivative of 1/y is natural log, and absolute value bars are required." },
+                { "q": "When executing separation of variables, when should the constant of integration '+C' be added?", "options": [{"text": "Immediately when the integration step is performed", "correct": true}, {"text": "At the very end of algebraic isolation", "correct": false}, {"text": "Never", "correct": false}, {"text": "None", "correct": false}], "explanation": "The constant +C must appear the moment integrals are removed. Forgetting it early disrupts the algebraic solution." },
+                { "q": "If ln|y| = x + C, how do you isolate y exponentially?", "options": [{"text": "y = A * e^x, where A = ±e^C", "correct": true}, {"text": "y = e^x + C", "correct": false}, {"text": "y = e^x + e^C", "correct": false}, {"text": "None", "correct": false}], "explanation": "Exponentiating both sides gives $|y| = e^(x+C) = e^C * e^x$. Replacing $\pm e^C$ with a new constant A simplifies the expression." },
+                { "q": "True or False: Terms like 'x + y' can be separated using standard multiplication and division isolation.", "options": [{"text": "False", "correct": true}, {"text": "True", "correct": false}], "explanation": "Equations like dy/dx = x + y cannot be separated using basic multiplication or division; they are non-separable in this curriculum." },
+                { "q": "Separate variables for dy/dx = 3x^2 * y^2.", "options": [{"text": "1/y^2 dy = 3x^2 dx", "correct": true}, {"text": "y^2 dy = 3x^2 dx", "correct": false}, {"text": "1/y^2 dx = 3x^2 dy", "correct": false}, {"text": "None", "correct": false}], "explanation": "Dividing by $y^2$ and multiplying by dx moves the variables to their respective sides." },
+                { "q": "Why do we typically only add '+C' to the independent variable (x) side instead of both sides?", "options": [{"text": "Two constants can be combined into a single constant on one side", "correct": true}, {"text": "The left side constant is always zero", "correct": false}, {"text": "It is a rule chosen by convention", "correct": false}, {"text": "None", "correct": false}], "explanation": "Combining constants ($C_2 - C_1 = C$) keeps the algebra clean without changing the solution." }
+              ]
             },
             {
               "id": "7.6",
               "topic": "7.6 Finding Particular Solutions Using Initial Conditions and Separation of Variables",
-              "videoId": "part_sol_760k6",
+              "videoId": "O0iR87gOWdg",
               "quiz": [
                 { "q": "What distinguishes a particular solution from a general solution?", "options": [{"text": "It handles a specific initial coordinate condition to replace C with a number", "correct": true}, {"text": "It contains multiple variables", "correct": false}, {"text": "It has no derivatives", "correct": false}, {"text": "None", "correct": false}], "explanation": "A particular solution uses an initial condition to determine the specific constant value, defining one unique curve out of the solution family." },
                 { "q": "If dy/dx = x/y and the particular solution curve passes through (0, -2), what must you consider when isolating y from y^2 = x^2 + 4?", "options": [{"text": "Select the negative square root: y = -sqrt(x^2 + 4)", "correct": true}, {"text": "Select the positive square root: y = sqrt(x^2 + 4)", "correct": false}, {"text": "Keep the ± sign active", "correct": false}, {"text": "None", "correct": false}], "explanation": "Because the initial condition has a negative y-value (-2), you must choose the negative root for the function to be valid at that point." },
@@ -2189,11 +2191,45 @@ export const curriculumData: Record<string, any> = {
               ]
             },
             {
+              "id": "7.7",
+              "topic": "7.7 Finding Particular Solutions Using Initial Conditions and Separation of Variables",
+              "videoId": "RBy5HpCSRfY",
+              "quiz": [
+                { "q": "What is the first step in solving a separable differential equation dy/dx = g(x)h(y)?", "options": [{"text": "Move all y terms to the left and x terms to the right", "correct": true}, {"text": "Take the derivative of both sides", "correct": false}, {"text": "Set dy/dx to zero", "correct": false}, {"text": "None", "correct": false}], "explanation": "Separation of variables requires isolating dx and dy with their corresponding functions before integrating." },
+                { "q": "When solving dy/dx = 2xy with y(0) = 3, what is the correct first separation?", "options": [{"text": "(1/y) dy = 2x dx", "correct": true}, {"text": "dy = 2xy dx", "correct": false}, {"text": "y dy = 2x dx", "correct": false}, {"text": "None", "correct": false}], "explanation": "Divide by y and multiply by dx to get the y terms with dy and x terms with dx." },
+                { "q": "After integrating both sides of a separated equation, why must you include +C?", "options": [{"text": "To represent the general family of solutions", "correct": true}, {"text": "To make the math look harder", "correct": false}, {"text": "Because it cancels out", "correct": false}, {"text": "None", "correct": false}], "explanation": "The constant C is required for the indefinite integral before applying initial conditions." },
+                { "q": "Given integral(1/y) dy = integral(2x) dx, what is the implicit general solution?", "options": [{"text": "ln|y| = x^2 + C", "correct": true}, {"text": "y = x^2 + C", "correct": false}, {"text": "ln(y) = 2x^2 + C", "correct": false}, {"text": "None", "correct": false}], "explanation": "The antiderivative of 1/y is ln|y| and the antiderivative of 2x is x^2." },
+                { "q": "If ln|y| = x^2 + C, what is the explicit solution for y?", "options": [{"text": "y = Ce^(x^2)", "correct": true}, {"text": "y = e^(x^2) + C", "correct": false}, {"text": "y = ln(x^2) + C", "correct": false}, {"text": "None", "correct": false}], "explanation": "Exponentiating both sides gives y = e^(x^2 + C), which simplifies to y = e^C * e^(x^2), where e^C is a new constant C." },
+                { "q": "Using y = Ce^(x^2) and y(0) = 3, what is the value of C?", "options": [{"text": "3", "correct": true}, {"text": "0", "correct": false}, {"text": "1", "correct": false}, {"text": "None", "correct": false}], "explanation": "3 = C * e^(0^2) -> 3 = C * 1 -> C = 3." },
+                { "q": "True or False: You can solve for C before or after isolating y.", "options": [{"text": "True", "correct": true}, {"text": "False", "correct": false}], "explanation": "While true, solving for C early often simplifies the algebraic work significantly." },
+                { "q": "If you get ln|y| = x + C, what is the general solution for y?", "options": [{"text": "y = Ce^x", "correct": true}, {"text": "y = e^x + C", "correct": false}, {"text": "y = x + C", "correct": false}, {"text": "None", "correct": false}], "explanation": "Exponentiating both sides yields y = Ce^x." },
+                { "q": "Solve dy/dx = y/x given y(1) = 2. What is the particular solution?", "options": [{"text": "y = 2x", "correct": true}, {"text": "y = x^2", "correct": false}, {"text": "y = x + 1", "correct": false}, {"text": "None", "correct": false}], "explanation": "ln|y| = ln|x| + C -> y = Cx. Plugging in (1, 2) gives 2 = C(1), so C=2." },
+                { "q": "Why is the absolute value used in ln|y|?", "options": [{"text": "To handle negative values of y in the domain", "correct": true}, {"text": "Because it looks better", "correct": false}, {"text": "To force the answer to be positive", "correct": false}, {"text": "None", "correct": false}], "explanation": "The antiderivative of 1/y is strictly ln|y| to ensure the domain matches the original differential equation." }
+              ]
+            },
+            {
+              "id": "7.8",
+              "topic": "7.8 Exponential Models with Differential Equations",
+              "videoId": "eXGxhHKqYmg",
+              "quiz": [
+                { "q": "What is the general solution to the differential equation dy/dt = ky?", "options": [{"text": "y(t) = y0 * e^(kt)", "correct": true}, {"text": "y(t) = kt^2 + y0", "correct": false}, {"text": "y(t) = y0 + kt", "correct": false}, {"text": "None", "correct": false}], "explanation": "This is the standard model for exponential growth and decay." },
+                { "q": "In dy/dt = ky, what does the constant k represent?", "options": [{"text": "The relative growth or decay rate", "correct": true}, {"text": "The initial amount", "correct": false}, {"text": "The time elapsed", "correct": false}, {"text": "None", "correct": false}], "explanation": "k > 0 indicates growth, while k < 0 indicates decay." },
+                { "q": "If a population doubles in 5 years, what is the growth rate equation?", "options": [{"text": "2y0 = y0 * e^(k*5)", "correct": true}, {"text": "y0 = 2y0 * e^(k*5)", "correct": false}, {"text": "2 = k * 5", "correct": false}, {"text": "None", "correct": false}], "explanation": "Setting y(5) = 2y0 allows you to solve for k." },
+                { "q": "How do you find the decay constant k if an item has a half-life of 50 years?", "options": [{"text": "0.5 = e^(k*50)", "correct": true}, {"text": "0.5 = e^(50/k)", "correct": false}, {"text": "k = 50 * ln(0.5)", "correct": false}, {"text": "None", "correct": false}], "explanation": "At t=50, the amount is half of y0, so 0.5y0 = y0 * e^(50k)." },
+                { "q": "True or False: Exponential decay models eventually reach zero.", "options": [{"text": "False", "correct": true}, {"text": "True", "correct": false}], "explanation": "Mathematically, e^(kt) only approaches zero as t approaches infinity; it never technically hits zero." },
+                { "q": "What is Newton's Law of Cooling differential equation?", "options": [{"text": "dT/dt = -k(T - Tenv)", "correct": true}, {"text": "dT/dt = kT", "correct": false}, {"text": "dT/dt = -kT", "correct": false}, {"text": "None", "correct": false}], "explanation": "The rate of change is proportional to the difference between the object temperature and the ambient temperature." },
+                { "q": "In Newton's Law of Cooling, what happens to (T - Tenv) as t increases?", "options": [{"text": "It decays exponentially toward zero", "correct": true}, {"text": "It grows linearly", "correct": false}, {"text": "It stays constant", "correct": false}, {"text": "None", "correct": false}], "explanation": "The difference between the object and the environment shrinks until they reach thermal equilibrium." },
+                { "q": "If dy/dt = 0.05y, how long does it take to triple?", "options": [{"text": "ln(3) / 0.05", "correct": true}, {"text": "3 / 0.05", "correct": false}, {"text": "0.05 * ln(3)", "correct": false}, {"text": "None", "correct": false}], "explanation": "3 = e^(0.05t) -> ln(3) = 0.05t -> t = ln(3)/0.05." },
+                { "q": "If a radioactive isotope has 100g at t=0 and 25g at t=10, what is the half-life?", "options": [{"text": "5 years", "correct": true}, {"text": "10 years", "correct": false}, {"text": "2.5 years", "correct": false}, {"text": "None", "correct": false}], "explanation": "It takes 5 years to go from 100 to 50, and another 5 years to go from 50 to 25." },
+                { "q": "What is the solution to dy/dt = -0.5y with y(0) = 100?", "options": [{"text": "y(t) = 100e^(-0.5t)", "correct": true}, {"text": "y(t) = 100e^(0.5t)", "correct": false}, {"text": "y(t) = -0.5t + 100", "correct": false}, {"text": "None", "correct": false}], "explanation": "This follows the y = y0e^(kt) template with y0=100 and k=-0.5." }
+              ]
+            },
+            {
             "id": "7.9",
             "topic": "7.9 Logistic Models with Differential Equations",
-            "videoId": "logistic_790bc",
+            "videoId": "DaBVapQZ948",
             "quiz": [
-                { "q": "What is the standard algebraic structure of the logistic growth differential equation?", "options": [{"text": "dP/dt = k * P * (1 - P / M), where M is the carrying capacity", "correct": true}, {"text": "dP/dt = k * P", "correct": false}, {"text": "dP/dt = k * (M - P)", "correct": false}, {"text": "None", "correct": false}], "explanation": "Logistic setups incorporate both an exponential expansion factor ($kP$) paired against a resource ceiling constraint term $(1 - P/M)$." },
+                { "question": "What is the standard algebraic structure of the logistic growth differential equation?", "options": [{"text": "dP/dt = k * P * (1 - P / M), where M is the carrying capacity", "correct": true}, {"text": "dP/dt = k * P", "correct": false}, {"text": "dP/dt = k * (M - P)", "correct": false}, {"text": "None", "correct": false}], "explanation": "Logistic setups incorporate both an exponential expansion factor ($kP$) paired against a resource ceiling constraint term $(1 - P/M)$." },
                 { "q": "What does the parameter 'M' represent in a logistic tracking scenario?", "options": [{"text": "The carrying capacity (the maximum stable sustainable population limit)", "correct": true}, {"text": "The initial population base", "correct": false}, {"text": "The maximum growth speed", "correct": false}, {"text": "None", "correct": false}], "explanation": "Carrying capacity defines the upper structural horizontal asymptote that bounds population growth over long periods of time." },
                 { "q": "At what explicit population level does a logistic system experience its absolute maximum growth rate?", "options": [{"text": "At exactly half of the carrying capacity (P = M / 2)", "correct": true}, {"text": "When P reaches the full carrying capacity M", "correct": false}, {"text": "At time t = 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "The maximum rate corresponds to the inflection point of the logistic S-curve, occurring precisely at half capacity: $P = M / 2$." },
                 { "q": "If a differential equation is stated as $dP/dt = 0.2P - 0.001P^2$, rewrite it to find the carrying capacity M.", "options": [{"text": "dP/dt = 0.2P * (1 - P / 200), so M = 200", "correct": true}, {"text": "M = 0.2", "correct": false}, {"text": "M = 1000", "correct": false}, {"text": "None", "correct": false}], "explanation": "Factoring out $0.2P$ gives $0.2P(1 - 0.005P)$. Since $0.005 = 1/200$, the carrying capacity constant maps directly to 200." },
@@ -2213,7 +2249,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.1",
             "topic": "8.1 Finding the Average Value of a Function on an Interval",
-            "videoId": "avg_val_810k1",
+            "videoId": "s-HR0q7Vh9o",
             "quiz": [
               { "q": "What is the formula for the average value of a continuous function f(x) on [a, b]?", "options": [{"text": "1/(b-a) * Integral from a to b of f(x) dx", "correct": true}, {"text": "Integral from a to b of f(x) dx", "correct": false}, {"text": "[f(b) - f(a)] / (b - a)", "correct": false}, {"text": "None", "correct": false}], "explanation": "The average value divides the total accumulated area under the curve by the width of the interval (b - a)." },
               { "q": "What theorem guarantees that a continuous function will equal its average value at least once on an open interval?", "options": [{"text": "Mean Value Theorem for Integrals", "correct": true}, {"text": "Extreme Value Theorem", "correct": false}, {"text": "Intermediate Value Theorem", "correct": false}, {"text": "None", "correct": false}], "explanation": "The MVT for Integrals guarantees a value c in (a, b) such that f(c) equals the average value of the function." },
@@ -2230,7 +2266,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.2",
             "topic": "8.2 Connecting Position, Velocity, and Acceleration of Functions Using Integrals",
-            "videoId": "pva_int_820k2",
+            "videoId": "tSqZJiVPtAY",
             "quiz": [
               { "q": "Integrating an acceleration function a(t) with respect to time yields which kinematic function?", "options": [{"text": "Velocity, v(t) + C", "correct": true}, {"text": "Position, x(t) + C", "correct": false}, {"text": "Speed", "correct": false}, {"text": "None", "correct": false}], "explanation": "Velocity is the antiderivative of acceleration: v(t) = ∫a(t) dt." },
               { "q": "Integrating a velocity function v(t) over an interval [a, b] calculates what physical quantity?", "options": [{"text": "Displacement (net change in position)", "correct": true}, {"text": "Total distance traveled", "correct": false}, {"text": "Final acceleration", "correct": false}, {"text": "None", "correct": false}], "explanation": "The definite integral of velocity yields the net displacement: x(b) - x(a)." },
@@ -2247,7 +2283,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.3",
             "topic": "8.3 Using Accumulation Functions and Definite Integrals in Applied Contexts",
-            "videoId": "apply_ctx_830k3",
+            "videoId": "0-i34IEzOrs",
             "quiz": [
               { "q": "In applied accumulation problems, how is the total amount of a quantity calculated when given both an 'Inflow' rate and an 'Outflow' rate?", "options": [{"text": "Amount = Initial Amount + Integral of (Inflow Rate - Outflow Rate) dt", "correct": true}, {"text": "Amount = Integral of Inflow Rate * Outflow Rate dt", "correct": false}, {"text": "Amount = Inflow Rate - Outflow Rate", "correct": false}, {"text": "None", "correct": false}], "explanation": "The net rate of change is the entering rate minus the leaving rate; integrating this net rate tracks the total accumulation." },
               { "q": "Water enters a tank at E(t) gal/hr and leaves at L(t) gal/hr. What equation determines when the volume of water in the tank is at a relative maximum?", "options": [{"text": "E(t) - L(t) = 0", "correct": true}, {"text": "E'(t) = 0", "correct": false}, {"text": "Integral of (E(t) - L(t)) dt = 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "Extrema occur at critical points where the derivative function—which is the net rate E(t) - L(t)—equals zero." },
@@ -2264,7 +2300,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "4", 
             "topic": "8.4 Area Between Curves of Functions Given as Expressions of x",
-            "videoId": "area_x_840k4",
+            "videoId": "Ip16U-aFC-Q",
             "quiz": [
               { "q": "What is the standard definite integral setup for finding the area between two curves f(x) and g(x) on [a, b] where f(x) ≥ g(x)?", "options": [{"text": "Integral from a to b of [f(x) - g(x)] dx", "correct": true}, {"text": "Integral from a to b of [g(x) - f(x)] dx", "correct": false}, {"text": "Integral from a to b of [f(x) + g(x)] dx", "correct": false}, {"text": "None", "correct": false}], "explanation": "The area bounded between two functions is found by integrating the upper function minus the lower function over the interval." },
               { "q": "How do you find the boundaries of integration (a and b) if they are not explicitly given in an area problem?", "options": [{"text": "Set the two equations equal to each other ($f(x) = g(x)$) and solve for their intersection x-values", "correct": true}, {"text": "Find the x-intercepts of the top function", "correct": false}, {"text": "Assume boundaries are 0 and 1", "correct": false}, {"text": "None", "correct": false}], "explanation": "The intersection points of the boundaries define where the enclosed region opens and closes." },
@@ -2281,7 +2317,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.5",
             "topic": "8.5 Area Between Curves of Functions Given as Expressions of y",
-            "videoId": "area_y_850k5",
+            "videoId": "YuP1GocyG0o",
             "quiz": [
               { "q": "When integrating with respect to y to find a bounded area, what is the correct orientation layout?", "options": [{"text": "Integral from c to d of [Right Function - Left Function] dy", "correct": true}, {"text": "Integral of [Left - Right] dy", "correct": false}, {"text": "Integral of [Top - Bottom] dy", "correct": false}, {"text": "None", "correct": false}], "explanation": "To ensure a positive area, integrate the rightmost function (larger x-values) minus the leftmost function (smaller x-values) with respect to y." },
               { "q": "When is it more advantageous to integrate with respect to y instead of x?", "options": [{"text": "When the boundary curves are naturally solved for x in terms of y, or when a top/bottom split changes multiple times horizontally", "correct": true}, {"text": "When the functions are polynomials", "correct": false}, {"text": "Always", "correct": false}, {"text": "None", "correct": false}], "explanation": "Integrating with respect to y simplifies the problem when a region is bounded by a single right function and a single left function." },
@@ -2298,7 +2334,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.6",
             "topic": "8.6 Finding Volumes with Cross Sections: Squares and Rectangles",
-            "videoId": "vol_cs_sq_860k6",
+            "videoId": "qMXPnfx2MQM",
             "quiz": [
               { "q": "What is the general integral formula for computing the volume of a solid based on known cross-sectional areas?", "options": [{"text": "Volume = Integral from a to b of A(x) dx, where A(x) is the area function of the cross section", "correct": true}, {"text": "Volume = Integral of π * f(x) dx", "correct": false}, {"text": "Volume = Area * Perimeter", "correct": false}, {"text": "None", "correct": false}], "explanation": "Integrating the cross-sectional area function sums up infinitely thin slices to calculate the total volume." },
               { "q": "If a solid has a base bounded by curves on the xy-plane, and its cross sections perpendicular to the x-axis are SQUARES, what is A(x)?", "options": [{"text": "A(x) = (base)^2, where base = [Top Curve - Bottom Curve]", "correct": true}, {"text": "A(x) = 2 * base", "correct": false}, {"text": "A(x) = π * (base)^2", "correct": false}, {"text": "None", "correct": false}], "explanation": "The area of a square is $side^2$. The side length of the square corresponds to the distance between the upper and lower boundary curves." },
@@ -2315,7 +2351,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.7",
             "topic": "8.7 Finding Volumes with Cross Sections: Triangles and Semicircles",
-            "videoId": "vol_cs_tri_870k7",
+            "videoId": "ZegdFKZwHAA",
             "quiz": [
               { "q": "If a solid has cross sections perpendicular to the x-axis that are SEMICIRCLES, what is the cross-sectional area formula A(x)?", "options": [{"text": "A(x) = (π/8) * (base)^2, where base = [Top - Bottom]", "correct": true}, {"text": "A(x) = (π/2) * (base)^2", "correct": false}, {"text": "A(x) = π * (base)^2", "correct": false}, {"text": "None", "correct": false}], "explanation": "The radius of the semicircle is $base / 2$. The area of a semicircle is $(1/2)\\pi r^2 = (1/2)\\pi(base/2)^2 = (\\pi/8)base^2$." },
               { "q": "If a solid has cross sections that are ISOSCELES RIGHT TRIANGLES with their hypotenuse on the base, what is the area formula A(x)?", "options": [{"text": "A(x) = (1/4) * (base)^2", "correct": true}, {"text": "A(x) = (1/2) * (base)^2", "correct": false}, {"text": "A(x) = (sqrt(3)/4) * (base)^2", "correct": false}, {"text": "None", "correct": false}], "explanation": "For an isosceles right triangle with its hypotenuse on the base, geometry dictates the height is half the hypotenuse, yielding $Area = (1/2) \\times base \\times (base/2) = (1/4)base^2$." },
@@ -2332,7 +2368,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.8",
             "topic": "8.8 Volume Solids of Revolution: Disk Method",
-            "videoId": "vol_disk_880k8",
+            "videoId": "SAHSVg7Jw_A",
             "quiz": [
               { "q": "What is the standard integral formula for the Disk Method when revolving a single function f(x) around the horizontal x-axis?", "options": [{"text": "Volume = π * Integral from a to b of [f(x)]^2 dx", "correct": true}, {"text": "Volume = Integral of f(x) dx", "correct": false}, {"text": "Volume = 2π * Integral of x * f(x) dx", "correct": false}, {"text": "None", "correct": false}], "explanation": "The Disk Method calculates volume by summing circular disks with area $\\pi r^2$, where the radius r is equal to the function height $f(x)$." },
               { "q": "When using the Disk Method, what is the spatial relationship between the representative rectangular slices and the axis of revolution?", "options": [{"text": "The strips are perpendicular to the axis of revolution", "correct": true}, {"text": "The strips are parallel to the axis of revolution", "correct": false}, {"text": "They are skewed at a 45-degree angle", "correct": false}, {"text": "None", "correct": false}], "explanation": "Slicing a solid of revolution perpendicular to its rotation axis creates circular cross-sectional disks." },
@@ -2349,7 +2385,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.9",
             "topic": "8.9 Volume Solids of Revolution: Washer Method",
-            "videoId": "vol_wash_890k9",
+            "videoId": "SAHSVg7Jw_A",
             "quiz": [
               { "q": "What is the standard definite integral formula for the Washer Method around a horizontal axis?", "options": [{"text": "Volume = π * Integral from a to b of [(R(x))^2 - (r(x))^2] dx", "correct": true}, {"text": "Volume = π * Integral of (R(x) - r(x))^2 dx", "correct": false}, {"text": "Volume = Integral of R(x)^2 dx", "correct": false}, {"text": "None", "correct": false}], "explanation": "The Washer Method calculates volume by subtracting the inner hollow core from the outer solid volume: $\\pi(R^2 - r^2)$." },
               { "q": "How are the Outer Radius R(x) and Inner Radius r(x) defined geometrically?", "options": [{"text": "R(x) is the distance from the axis to the outer curve; r(x) is the distance from the axis to the inner curve", "correct": true}, {"text": "R(x) is top, r(x) is bottom always", "correct": false}, {"text": "They are evaluated from the y-intercept", "correct": false}, {"text": "None", "correct": false}], "explanation": "Radii are measured as distances starting from the axis of revolution out to the boundary curves." },
@@ -2366,7 +2402,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.10",
             "topic": "8.10 Volume Solids of Revolution with Washers Separated Regions",
-            "videoId": "vol_wash_sep_8100k10",
+            "videoId": "UZCvQmmifEA",
             "quiz": [
               { "q": "When a bounding region is split into multiple sub-regions that must be rotated independently, how do you find the total volume?", "options": [{"text": "Set up a separate disk or washer integral for each distinct sub-region and add the volumes together", "correct": true}, {"text": "Combine the curves into a single average equation", "correct": false}, {"text": "Integrate across the entire span using the outermost boundaries only", "correct": false}, {"text": "None", "correct": false}], "explanation": "If the boundary curves intersect and switch tracking order (which curve is outer vs inner), the solid must be broken down at the intersection point into independent integration setups." },
               { "q": "Suppose region R1 is bounded by y=x and y=0 from [0,1], and region R2 is bounded by y=2-x and y=0 from [1,2]. If the combined region is rotated around the x-axis, what is the correct setup?", "options": [{"text": "π * [Integral from 0 to 1 of x^2 dx + Integral from 1 to 2 of (2-x)^2 dx]", "correct": true}, {"text": "π * Integral from 0 to 2 of (x - (2-x))^2 dx", "correct": false}, {"text": "Integral from 0 to 2 of (2-x)^2 dx", "correct": false}, {"text": "None", "correct": false}], "explanation": "The upper boundary function shifts tracking at x = 1, requiring two separate disk method integrals split at that point." },
@@ -2383,7 +2419,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.11",
             "topic": "8.11 Volume Solids of Revolution: Shell Method",
-            "videoId": "vol_shell_8110k11",
+            "videoId": "dN7mS08yrc8",
             "quiz": [
               { "q": "What is the general integral formula for the Shell Method when revolving a region bounded by f(x) around the vertical y-axis?", "options": [{"text": "Volume = 2π * Integral from a to b of x * f(x) dx", "correct": true}, {"text": "Volume = π * Integral of [f(x)]^2 dx", "correct": false}, {"text": "Volume = 2π * Integral of [f(x)]^2 dx", "correct": false}, {"text": "None", "correct": false}], "explanation": "The Shell Method tracks cylindrical shells with volume $V = 2\\pi \\cdot \\text{radius} \\cdot \\text{height} \\cdot \\text{thickness}$, where radius is $x$ and height is $f(x)$." },
               { "q": "When using the Shell Method, what is the geometric relationship between the representative rectangular slices and the axis of revolution?", "options": [{"text": "The strips are parallel to the axis of revolution", "correct": true}, {"text": "The strips are perpendicular to the axis of revolution", "correct": false}, {"text": "They are unrelated", "correct": false}, {"text": "None", "correct": false}], "explanation": "Unlike the disk/washer methods, the Shell Method uses rectangular slices sliced completely parallel to the rotation axis." },
@@ -2400,7 +2436,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "8.12",
             "topic": "8.12 Length of a Smooth Curve Azimuthal Parameters Planar Regions",
-            "videoId": "arc_len_ab_8120k12",
+            "videoId": "-syuzvTJV4o",
             "quiz": [
               { "q": "What is the primary underlying geometric foundation used to derive the arc length formula for a curve?", "options": [{"text": "The Pythagorean Theorem applied to tiny differential segments", "correct": true}, {"text": "The area of a circle section", "correct": false}, {"text": "The definition of an asymptote", "correct": false}, {"text": "None", "correct": false}], "explanation": "Arc length sums up infinitesimally small hypotenuse segments: $dL = \\sqrt{dx^2 + dy^2}$." },
               { "q": "What is the standard definite integral formula for the length of a smooth curve y = f(x) from x = a to x = b?", "options": [{"text": "Integral from a to b of sqrt(1 + [f'(x)]^2) dx", "correct": true}, {"text": "Integral from a to b of sqrt(1 + f(x)) dx", "correct": false}, {"text": "Integral from a to b of [f'(x)]^2 dx", "correct": false}, {"text": "None", "correct": false}], "explanation": "Factoring out $dx$ from the differential hypotenuse structure yields the standard arc length integrand expression: $\\sqrt{1 + [f'(x)]^2}$." },
@@ -2417,7 +2453,7 @@ export const curriculumData: Record<string, any> = {
           {
           "id": "8.13",
           "topic": "8.13 The Arc Length of a Smooth, Planar Curve and Distance Traveled",
-          "videoId": "arc_len_bc_8130bc",
+          "videoId": "t_F7Ug23zbw",
           "quiz": [
             { "q": "What is the standard definite integral formula for the arc length of a smooth parametric curve on the interval [a, b]?", "options": [{"text": "Integral from a to b of sqrt([dx/dt]^2 + [dy/dt]^2) dt", "correct": true}, {"text": "Integral from a to b of sqrt(1 + [dy/dx]^2) dx", "correct": false}, {"text": "Integral from a to b of (dx/dt + dy/dt) dt", "correct": false}, {"text": "None", "correct": false}], "explanation": "Derived from the Pythagorean theorem applied to infinitesimally small vector steps, the total length along a parametric path evaluates as the integral of speed over time." },
             { "q": "The integrand expression $\\sqrt{(dx/dt)^2 + (dy/dt)^2}$ inside the parametric arc length formula is equivalent to what physical value?", "options": [{"text": "The speed of the particle", "correct": true}, {"text": "The acceleration vector magnitude", "correct": false}, {"text": "The net displacement vector", "correct": false}, {"text": "None", "correct": false}], "explanation": "Speed is the scalar magnitude of the velocity vector. Integrating speed over a time interval calculates the complete physical distance traveled along the curve path." },
@@ -2439,7 +2475,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "9.1",
             "topic": "9.1 Defining and Differentiating Parametric Equations",
-            "videoId": "param_diff_910k1",
+            "videoId": "T1jyGI9kKeY",
             "quiz": [
               { "q": "If x = f(t) and y = g(t), what is the formula for the first derivative dy/dx?", "options": [{"text": "(dy/dt) / (dx/dt)", "correct": true}, {"text": "(dx/dt) / (dy/dt)", "correct": false}, {"text": "(dy/dt) * (dx/dt)", "correct": false}, {"text": "None", "correct": false}], "explanation": "By the chain rule, dy/dx is the rate of change of y with respect to t divided by the rate of change of x with respect to t." },
               { "q": "Where does a parametric curve have a horizontal tangent line?", "options": [{"text": "Where dy/dt = 0 and dx/dt ≠ 0", "correct": true}, {"text": "Where dx/dt = 0 and dy/dt ≠ 0", "correct": false}, {"text": "Where both equal 0", "correct": false}, {"text": "None", "correct": false}], "explanation": "A horizontal tangent requires a slope of zero, meaning the numerator dy/dt must be zero while the denominator remains non-zero." },
@@ -2456,7 +2492,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "9.2",
             "topic": "9.2 Second Derivatives of Parametric Equations",
-            "videoId": "param_sec_diff_920k2",
+            "videoId": "RhhMq_nsvgQ",
             "quiz": [
               { "q": "What is the correct formal template formula for the second derivative d^2y/dx^2 of a parametric curve?", "options": [{"text": "[d/dt (dy/dx)] / (dx/dt)", "correct": true}, {"text": "(d^2y/dt^2) / (d^2x/dt^2)", "correct": false}, {"text": "d/dt (dy/dx)", "correct": false}, {"text": "None", "correct": false}], "explanation": "To find the rate of change of the slope with respect to x, you differentiate the slope function with respect to t, and divide by dx/dt again." },
               { "q": "What is the most dangerous common student trap when finding a parametric second derivative?", "options": [{"text": "Simply dividing the second derivative of y by the second derivative of x", "correct": true}, {"text": "Forgetting the chain rule", "correct": false}, {"text": "Using radians instead of degrees", "correct": false}, {"text": "None", "correct": false}], "explanation": "Dividing y'' by x'' completely ignores the implicit chain rule required when differentiating with respect to x." },
@@ -2473,7 +2509,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "9.3",
             "topic": "9.3 Arc Lengths of Curves Given by Parametric Equations",
-            "videoId": "param_arc_len_930k3",
+            "videoId": "EB6ZwRPsjXY",
             "quiz": [
               { "q": "What is the definite integral formula for computing the arc length of a parametric curve on the interval [a, b]?", "options": [{"text": "Integral from a to b of sqrt([dx/dt]^2 + [dy/dt]^2) dt", "correct": true}, {"text": "Integral of sqrt(1 + [dy/dx]^2) dx", "correct": false}, {"text": "Integral of (dx/dt + dy/dt) dt", "correct": false}, {"text": "None", "correct": false}], "explanation": "Derived from the Pythagorean theorem, the total distance along a parametric path unrolls as the accumulation of small hypotenuse segments." },
               { "q": "The integrand expression inside the parametric arc length formula is identical to what physical measurement?", "options": [{"text": "The speed of the particle", "correct": true}, {"text": "The acceleration vector magnitude", "correct": false}, {"text": "The displacement", "correct": false}, {"text": "None", "correct": false}], "explanation": "Speed is defined as $\\sqrt{(dx/dt)^2 + (dy/dt)^2}$. Integrating speed over time calculates total distance traveled (arc length)." },
@@ -2490,7 +2526,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "9.4",
             "topic": "9.4 Defining and Differentiating Vector-Valued Functions",
-            "videoId": "vec_diff_940k4",
+            "videoId": "iZyFv-eBWDc",
             "quiz": [
               { "q": "What is a vector-valued function in a 2D space?", "options": [{"text": "A function that takes a scalar input t and outputs a vector ⟨x(t), y(t)⟩", "correct": true}, {"text": "A standard multi-variable function", "correct": false}, {"text": "A single number output matrix", "correct": false}, {"text": "None", "correct": false}], "explanation": "Vector-valued functions organize parametric components into an ordered vector format." },
               { "q": "How do you differentiate a vector-valued function r(t) = ⟨x(t), y(t)⟩?", "options": [{"text": "Differentiate each component function independently: r'(t) = ⟨x'(t), y'(t)⟩", "correct": true}, {"text": "Use the quotient rule on components", "correct": false}, {"text": "Find the magnitude first", "correct": false}, {"text": "None", "correct": false}], "explanation": "Derivatives of vector functions operate term-by-term on each component." },
@@ -2507,7 +2543,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "9.5",
             "topic": "9.5 Integrating Vector-Valued Functions",
-            "videoId": "vec_int_950k5",
+            "videoId": "LHIQfNu5fT8",
             "quiz": [
               { "q": "How do you evaluate the indefinite integral of a vector-valued function?", "options": [{"text": "Integrate each component function separately and add a constant vector ⟨C_1, C_2⟩", "correct": true}, {"text": "Integrate only the x component", "correct": false}, {"text": "Combine components into a single scalar integral", "correct": false}, {"text": "None", "correct": false}], "explanation": "Integration distributes component-by-component, with each section generating its own integration constant." },
               { "q": "If v(t) = ⟨2t, 3⟩, find the general indefinite integral vector.", "options": [{"text": "⟨t^2 + C_1, 3t + C_2⟩", "correct": true}, {"text": "⟨t^2, 3t⟩", "correct": false}, "⟨2, 0⟩", {"text": "None", "correct": false}], "explanation": "Antiderivatives: ∫2t dt = t^2 + C1 and ∫3 dt = 3t + C2." },
@@ -2524,7 +2560,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "9.6",
             "topic": "9.6 Solving Motion Problems Using Parametric and Vector-Valued Functions",
-            "videoId": "planar_motion_960k6",
+            "videoId": "2GQjDXn1uBw",
             "quiz": [
               { "q": "How is the speed of a particle modeled by a vector-valued function calculated?", "options": [{"text": "The magnitude of the velocity vector: sqrt([dx/dt]^2 + [dy/dt]^2)", "correct": true}, {"text": "The derivative of velocity", "correct": false}, {"text": "dx/dt + dy/dt", "correct": false}, {"text": "None", "correct": false}], "explanation": "Speed is the absolute scalar magnitude of the velocity vector components at an instant." },
               { "q": "What is the distinction between velocity and speed in planar motion?", "options": [{"text": "Velocity is a vector specifying direction; speed is a scalar number specifying magnitude", "correct": true}, {"text": "They are identical parameters", "correct": false}, {"text": "Speed is a vector", "correct": false}, {"text": "None", "correct": false}], "explanation": "Velocity preserves directional tracking component splits, while speed simplifies that data into a single scalar value." },
@@ -2541,7 +2577,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "9.7",
             "topic": "9.7 Defining Polar Coordinates and Differentiating in Polar Form",
-            "videoId": "polar_diff_970k7",
+            "videoId": "66-wUer6cm8",
             "quiz": [
               { "q": "What coordinate variables define a point in the polar coordinate system?", "options": [{"text": "r (distance from the origin) and θ (counterclockwise angle from the positive x-axis)", "correct": true}, {"text": "x and y", "correct": false}, {"text": "Slope and intercept", "correct": false}, {"text": "None", "correct": false}], "explanation": "Polar coordinates locate points using a radial distance r paired with a rotational angle θ." },
               { "q": "What are the standard conversion equations used to transform polar coordinates into rectangular coordinates?", "options": [{"text": "x = r * cos(θ) and y = r * sin(θ)", "correct": true}, {"text": "x = r * sin(θ) and y = r * cos(θ)", "correct": false}, {"text": "r = x^2 + y^2", "correct": false}, {"text": "None", "correct": false}], "explanation": "Derived from right-triangle trigonometry, these projection profiles transform polar definitions into Cartesian coordinates." },
@@ -2558,7 +2594,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "9.8",
             "topic": "9.8 Find the Area of a Polar Region or the Area Bounded by a Single Polar Curve",
-            "videoId": "polar_area_single_980k8",
+            "videoId": "iPCbEOCPjIc",
             "quiz": [
               { "q": "What is the definitive calculus integral formula for finding the area of a polar region bounded by r = f(θ) from θ = α to θ = β?", "options": [{"text": "1/2 * Integral from α to β of r^2 dθ", "correct": true}, {"text": "Integral from α to β of r dθ", "correct": false}, {"text": "π * Integral of r^2 dθ", "correct": false}, {"text": "None", "correct": false}], "explanation": "Polar area accumulates a fan of thin sectors rather than vertical rectangles, using the sector area formula $A = \\frac{1}{2}r^2\\Delta\\theta$." },
               { "q": "What geometric element serves as the basis for approximating area in polar integration?", "options": [{"text": "A circular sector (pie slice)", "correct": true}, {"text": "A standard rectangle", "correct": false}, {"text": "A trapezoid", "correct": false}, {"text": "None", "correct": false}], "explanation": "Polar slices radiate from a central pole, matching the shape of thin circular sectors." },
@@ -2575,7 +2611,7 @@ export const curriculumData: Record<string, any> = {
           {
             "id": "9.9",
             "topic": "9.9 Finding the Area of the Region Bounded by Two Polar Curves",
-            "videoId": "polar_area_double_990k9",
+            "videoId": "7ioD7CNpdmE",
             "quiz": [
               { "q": "What is the standard definite integral setup for finding the area enclosed between an outer polar curve R(θ) and an inner polar curve r(θ)?", "options": [{"text": "1/2 * Integral from α to β of [(R(θ))^2 - (r(θ))^2] dθ", "correct": true}, {"text": "1/2 * Integral of (R(θ) - r(θ))^2 dθ", "correct": false}, {"text": "1/2 * Integral of [R(θ) - r(θ)] dθ", "correct": false}, {"text": "None", "correct": false}], "explanation": "The area is found by subtracting the inner region's sector area from the outer region's sector area: $\\frac{1}{2}(R^2 - r^2)$." },
               { "q": "How do you determine the limits of integration (α and β) when calculating the area bounded between two intersecting polar curves?", "options": [{"text": "Set the two equations equal to each other ($R(θ) = r(θ)$) and solve for the intersection angles", "correct": true}, {"text": "Find the intercepts on the x-axis", "correct": false}, {"text": "The limits are always 0 and 2π", "correct": false}, {"text": "None", "correct": false}], "explanation": "The intersection angles pinpoint where the shared boundary constraints open and close." },
@@ -2597,7 +2633,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.1",
           "topic": "10.1 Defining Convergent and Divergent Infinite Series",
-          "videoId": "seq_ser_101bc",
+          "videoId": "cr8QcflluF0",
           "quiz": [
             { "q": "What is an infinite series?", "options": [{"text": "The summation of the terms of an infinite sequence", "correct": true}, {"text": "An ordered list of numbers separated by commas", "correct": false}, {"text": "A function mapping integers to reals", "correct": false}, {"text": "None", "correct": false}], "explanation": "A sequence is a list of terms, whereas a series is the continuous summation of those terms: $\\sum_{n=1}^{\\infty} a_n$." },
             { "q": "What is a partial sum $S_n$ of an infinite series?", "options": [{"text": "The sum of the first n terms of the series", "correct": true}, {"text": "The limit of the series as n approaches infinity", "correct": false}, {"text": "An approximation using only even terms", "correct": false}, {"text": "None", "correct": false}], "explanation": "The $n$-th partial sum is defined as $S_n = a_1 + a_2 + \\dots + a_n$. The convergence of the entire series is determined by the behavior of the sequence of these partial sums." },
@@ -2614,7 +2650,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.2",
           "topic": "10.2 Working with Geometric Series",
-          "videoId": "geom_ser_102bc",
+          "videoId": "WObMisjsI7Y",
           "quiz": [
             { "q": "What is the general formula for an infinite geometric series starting at n=1?", "options": [{"text": "∑ a * r^(n-1)", "correct": true}, {"text": "∑ a * n^r", "correct": false}, {"text": "∑ (a/r)^n", "correct": false}, {"text": "None", "correct": false}], "explanation": "A geometric series multiplies by a common ratio $r$ from one term to the next: $a + ar + ar^2 + \\dots$" },
             { "q": "Under what condition does an infinite geometric series converge?", "options": [{"text": "|r| < 1", "correct": true}, {"text": "|r| ≤ 1", "correct": false}, {"text": "r > 1", "correct": false}, {"text": "None", "correct": false}], "explanation": "An infinite geometric series converges if and only if the absolute value of its common ratio is strictly less than 1." },
@@ -2631,7 +2667,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.3",
           "topic": "10.3 The nth Term Test for Divergence",
-          "videoId": "nth_term_103bc",
+          "videoId": "iZZHhMa_RkE",
           "quiz": [
             { "q": "What is the primary conclusion of the nth Term Test for Divergence?", "options": [{"text": "If the limit of a_n as n approaches infinity does not equal zero, the series diverges.", "correct": true}, {"text": "If the limit equals zero, the series converges.", "correct": false}, {"text": "If the limit is zero, the series diverges.", "correct": false}, {"text": "None", "correct": false}], "explanation": "The test state that if $\\lim_{n \\to \\infty} a_n \\neq 0$, the terms do not shrink fast enough to form a finite sum, so the series must diverge." },
             { "q": "If $\\lim_{n \\to \\infty} a_n = 0$, what does the nth Term Test tell you?", "options": [{"text": "The test is completely inconclusive.", "correct": true}, {"text": "The series converges absolutely.", "correct": false}, {"text": "The series diverges.", "correct": false}, {"text": "None", "correct": false}], "explanation": "Terms approaching zero is a necessary condition for convergence, but not a sufficient guarantee. Further testing is required." },
@@ -2648,7 +2684,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.4",
           "topic": "10.4 Integral Test for Convergence",
-          "videoId": "integral_test_104bc",
+          "videoId": "0oqTH1PmVqE",
           "quiz": [
             { "q": "What three conditions must $f(x)$ satisfy on $[1, \\infty)$ to apply the Integral Test?", "options": [{"text": "Continuous, positive, and decreasing", "correct": true}, {"text": "Differentiable, positive, and increasing", "correct": false}, {"text": "Continuous, alternating, and bounded", "correct": false}, {"text": "None", "correct": false}], "explanation": "The function must be continuous, positive, and steadily decreasing to establish a valid comparative relationship with the series." },
             { "q": "If the improper integral $\\int_1^{\\infty} f(x)\\,dx$ evaluates to a finite value L, what does the test tell us about $\\sum a_n$?", "options": [{"text": "The series converges.", "correct": true}, {"text": "The series diverges.", "correct": false}, {"text": "The sum of the series is exactly L.", "correct": false}, {"text": "None", "correct": false}], "explanation": "The test guarantees that the series converges if the integral converges. However, the exact sum of the series is almost never equal to the value of the integral." },
@@ -2665,7 +2701,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.5",
           "topic": "10.5 Harmonic Series and p-Series",
-          "videoId": "p_series_105bc",
+          "videoId": "SxRP1EREzr8",
           "quiz": [
             { "q": "What is the general structural format of a p-series?", "options": [{"text": "∑ 1 / n^p", "correct": true}, {"text": "∑ p^n", "correct": false}, {"text": "∑ 1 / p^n", "correct": false}, {"text": "None", "correct": false}], "explanation": "A $p$-series raises the index variable $n$ in the denominator to a fixed constant power exponent $p$." },
             { "q": "Under what precise parameter condition does a p-series converge?", "options": [{"text": "p > 1", "correct": true}, {"text": "p ≥ 1", "correct": false}, {"text": "p < 1", "correct": false}, {"text": "None", "correct": false}], "explanation": "Using the integral test template, $\\int_1^{\\infty} \\frac{1}{x^p}\\,dx$ only yields a finite convergence value if $p > 1$." },
@@ -2682,7 +2718,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.6",
           "topic": "10.6 Comparison Tests for Convergence",
-          "videoId": "comp_tests_106bc",
+          "videoId": "xlDjLbrYfNU",
           "quiz": [
             { "q": "Under the Direct Comparison Test (DCT), if $0 \\le a_n \\le b_n$ and $\\sum b_n$ converges, what can be concluded?", "options": [{"text": "∑ a_n also converges.", "correct": true}, {"text": "∑ a_n diverges.", "correct": false}, {"text": "The test is inconclusive.", "correct": false}, {"text": "None", "correct": false}], "explanation": "If a larger positive series converges to a finite value, it forces the smaller positive series underneath it to also remain finite." },
             { "q": "Under the Direct Comparison Test (DCT), if $0 \\le b_n \\le a_n$ and $\\sum b_n$ diverges, what can be concluded?", "options": [{"text": "∑ a_n also diverges.", "correct": true}, {"text": "∑ a_n converges.", "correct": false}, {"text": "The test is inconclusive.", "correct": false}, {"text": "None", "correct": false}], "explanation": "If a smaller series diverges to infinity, it pushes the larger series above it to also diverge to infinity." },
@@ -2699,7 +2735,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.7",
           "topic": "10.7 Alternating Series Test for Convergence",
-          "videoId": "alt_series_107bc",
+          "videoId": "4vThWeL4RwM",
           "quiz": [
             { "q": "What two conditions must an alternating series $\\sum_{n=1}^{\\infty} (-1)^n a_n$ satisfy to guarantee convergence?", "options": [{"text": "The terms must be decreasing ($a_{n+1} \\le a_n$) and $\\lim_{n \\to \\infty} a_n = 0$", "correct": true}, {"text": "The terms must be increasing and $\\lim_{n \\to \\infty} a_n = 0$", "correct": false}, {"text": "The series must be geometric and $|r| < 1$", "correct": false}, {"text": "None", "correct": false}], "explanation": "The Alternating Series Test (Leibniz's Theorem) requires that the absolute magnitudes of the terms decrease monotonically and approach a limit of zero." },
             { "q": "If an alternating series satisfies $\\lim_{n \\to \\infty} a_n = 0$ but the absolute terms are NOT strictly decreasing, what is the conclusion?", "options": [{"text": "The Alternating Series Test is inconclusive", "correct": true}, {"text": "The series definitely diverges", "correct": false}, {"text": "The series definitely converges", "correct": false}, {"text": "None", "correct": false}], "explanation": "If the absolute terms do not decrease monotonically, the test is inconclusive, and you must use an alternative strategy to verify behavior." },
@@ -2716,7 +2752,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.8",
           "topic": "10.8 Ratio Test for Convergence",
-          "videoId": "ratio_test_108bc",
+          "videoId": "xGCO9E8Nl5M",
           "quiz": [
             { "q": "What condition must the Ratio Test limit $L = \\lim_{n \\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right|$ satisfy to prove absolute convergence?", "options": [{"text": "L < 1", "correct": true}, {"text": "L > 1", "correct": false}, {"text": "L = 1", "correct": false}, {"text": "L = 0 only", "correct": false}], "explanation": "If the ratio of consecutive terms settles on a limit strictly less than 1, the series behaves like a shrinking geometric series at infinity, ensuring absolute convergence." },
             { "q": "If the Ratio Test limit evaluates to $L > 1$ or $L = \\infty$, what is the conclusion?", "options": [{"text": "The series diverges", "correct": true}, {"text": "The series converges conditionally", "correct": false}, {"text": "The test is inconclusive", "correct": false}, {"text": "None", "correct": false}], "explanation": "A ratio limit greater than 1 proves the individual terms are growing in size at infinity, confirming divergence." },
@@ -2733,7 +2769,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.9",
           "topic": "10.9 Determining Absolute or Conditional Convergence",
-          "videoId": "abs_cond_109bc",
+          "videoId": "vnO1v1Dp8v0",
           "quiz": [
             { "q": "What is the requirement for an infinite series to be classified as absolutely convergent?", "options": [{"text": "The series of absolute values ∑ |a_n| must converge", "correct": true}, {"text": "The series must alternate signs", "correct": false}, {"text": "The terms must be integers", "correct": false}, {"text": "None", "correct": false}], "explanation": "If a series converges when all its terms are forced positive ($\\sum |a_n|$), the original series converges absolutely." },
             { "q": "What is the definition of conditional convergence?", "options": [{"text": "The alternating series ∑ a_n converges, but its absolute counterpart ∑ |a_n| diverges", "correct": true}, {"text": "The series only converges under certain initial values", "correct": false}, {"text": "The series converges to a negative limit", "correct": false}, {"text": "None", "correct": false}], "explanation": "Conditional convergence means the alternating signs are solely responsible for keeping the sum finite; without them, the values accumulate to infinity." },
@@ -2750,7 +2786,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.10",
           "topic": "10.10 Alternating Series Error Bound",
-          "videoId": "alt_error_10100bc",
+          "videoId": "frkDf69nYj8",
           "quiz": [
             { "q": "What does the Alternating Series Error Bound state about the truncation error of an alternating series approximated by $S_n$?", "options": [{"text": "The error |S - S_n| is bounded by the magnitude of the next term, |a_{n+1}|", "correct": true}, {"text": "The error is bounded by the first term, a_1", "correct": false}, {"text": "The error is bounded by the derivative at n", "correct": false}, {"text": "None", "correct": false}], "explanation": "The Alternating Series Estimation Theorem guarantees that the remainder error is less than or equal to the absolute value of the first neglected term." },
             { "q": "If you approximate the sum of $\\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}}{n}$ using the first 99 terms, the error is guaranteed to be less than or equal to:", "options": [{"text": "1/100", "correct": true}, {"text": "1/99", "correct": false}, {"text": "1/101", "correct": false}, {"text": "None", "correct": false}], "explanation": "The first neglected term is the 100th term: $a_{100} = 1/100$, which serves as our maximum error ceiling." },
@@ -2767,7 +2803,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.11",
           "topic": "10.11 Finding Taylor Polynomial Approximations of Functions",
-          "videoId": "taylor_poly_10110bc",
+          "videoId": "-g0NbTsEtVc",
           "quiz": [
             { "q": "What is the general n-th term formula for a Taylor polynomial coefficient centered at x = c?", "options": [{"text": "f^(n)(c) / n!", "correct": true}, {"text": "f'(c) / n", "correct": false}, {"text": "f^(n)(c)", "correct": false}, {"text": "None", "correct": false}], "explanation": "The coefficient of the $(x-c)^n$ term is always the $n$-th derivative of the function evaluated at the center $c$, divided by $n!$." },
             { "q": "What is a Taylor polynomial called if its center is explicitly c = 0?", "options": [{"text": "Maclaurin Polynomial", "correct": true}, {"text": "Euler Polynomial", "correct": false}, {"text": "Lagrange Polynomial", "correct": false}, {"text": "None", "correct": false}], "explanation": "A Maclaurin polynomial is standardly defined as a Taylor polynomial centered precisely at $c = 0$." },
@@ -2784,7 +2820,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.12",
           "topic": "10.12 Lagrange Error Bound",
-          "videoId": "lagrange_10120bc",
+          "videoId": "gg6FqaiYGD4",
           "quiz": [
             { "q": "What does the Lagrange Error Bound calculate?", "options": [{"text": "The worst-case maximum possible remainder error when approximating a function value using a Taylor polynomial", "correct": true}, {"text": "The exact error value", "correct": false}, {"text": "The lower bound integration constant", "correct": false}, {"text": "None", "correct": false}], "explanation": "The Lagrange remainder formula sets an upper bound margin on the truncation error profile over an interval." },
             { "q": "What derivative layer is evaluated to find the Lagrange error bound for an n-th degree Taylor polynomial?", "options": [{"text": "The (n + 1)-th derivative", "correct": true}, {"text": "The n-th derivative", "correct": false}, {"text": "The first derivative", "correct": false}, {"text": "None", "correct": false}], "explanation": "The maximum error uses information from the first omitted derivative layer: the $(n+1)$-th derivative." },
@@ -2801,7 +2837,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.13",
           "topic": "10.13 Radius and Interval of Convergence of Power Series",
-          "videoId": "radius_conv_10130bc",
+          "videoId": "1PGNIIemZaw",
           "quiz": [
             { "q": "What is a power series?", "options": [{"text": "An infinite series of the form ∑ c_n * (x - c)^n containing variable powers", "correct": true}, {"text": "A standard polynomial with finite terms", "correct": false}, {"text": "A series where exponents are factorials", "correct": false}, {"text": "None", "correct": false}], "explanation": "Power series introduce a variable $x$, essentially functioning as an infinite polynomial centered at a coordinate location $c$." },
             { "q": "What analytical test serves as the primary tool to find the radius of convergence R of a power series?", "options": [{"text": "The Ratio Test", "correct": true}, {"text": "The nth Term Test", "correct": false}, {"text": "The Integral Test", "correct": false}, {"text": "None", "correct": false}], "explanation": "Setting the absolute consecutive ratio limit less than 1 ($\\lim |a_{n+1}/a_n| < 1$) lets you isolate an inequality statement for $|x - c| < R$." },
@@ -2818,7 +2854,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.14",
           "topic": "10.14 Finding Taylor or Maclaurin Series for a Function",
-          "videoId": "build_taylor_10140bc",
+          "videoId": "tna89JFJ7_s",
           "quiz": [
             { "q": "What is the general n-th term of the Maclaurin expansion series for e^x?", "options": [{"text": "x^n / n!", "correct": true}, {"text": "(-1)^n * x^n / n!", "correct": false}, {"text": "x^(2n) / (2n)!", "correct": false}, {"text": "None", "correct": false}], "explanation": "The exponential series expands as $\\sum_{n=0}^{\\infty} \\frac{x^n}{n!} = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\dots$" },
             { "q": "What is the general n-th term of the Maclaurin expansion series for sin(x)?", "options": [{"text": "(-1)^n * x^(2n+1) / (2n+1)!", "correct": true}, {"text": "(-1)^n * x^(2n) / (2n)!", "correct": false}, {"text": "x^(2n+1) / (2n+1)!", "correct": false}, {"text": "None", "correct": false}], "explanation": "The sine function is odd, so its Maclaurin series contains only odd powers with alternating signs." },
@@ -2835,7 +2871,7 @@ export const curriculumData: Record<string, any> = {
         {
           "id": "10.15",
           "topic": "10.15 Representing Functions as Power Series",
-          "videoId": "power_series_rep_10150bc",
+          "videoId": "Fc0OMMtSzns",
           "quiz": [
             { "q": "Find a power series representation centered at x = 0 for the function f(x) = 1 / (1 + 4x).", "options": [{"text": "∑ (-1)^n * 4^n * x^n", "correct": true}, {"text": "∑ 4^n * x^n", "correct": false}, {"text": "∑ (-4)^n * x^(2n)", "correct": false}, {"text": "None", "correct": false}], "explanation": "Using the geometric series template $\\frac{1}{1-r} = \\sum r^n$, we substitute $r = -4x$. This yields $\\sum (-4x)^n = \\sum (-1)^n 4^n x^n$." },
             { "q": "What is the interval of convergence for the series representation of f(x) = 1 / (1 - 2x) centered at 0?", "options": [{"text": "(-1/2, 1/2)", "correct": true}, {"text": "(-2, 2)", "correct": false}, {"text": "(-1, 1)", "correct": false}, {"text": "None", "correct": false}], "explanation": "The geometric series converges if $|r| < 1$. Here, $|2x| < 1 \\to |x| < 1/2$, defining the open interval $(-1/2, 1/2)$." },

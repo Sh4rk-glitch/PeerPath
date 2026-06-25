@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { InlineMath } from 'react-katex';
+import 'katex/dist/katex.min.css';
 
 type Question = {
-  question: string;
-  options: any[]; // Changed from string[] to any[] to safely capture both formats
-  correctAnswer: number;
+  q: string; // 🌟 FIXED: Matches your exact JSON format
+  options: any[];
+  correctAnswer?: number;
 }
 
 type Props = {
@@ -36,10 +38,9 @@ export default function QuizEngine({ questions, onQuizComplete }: Props) {
   const handleVerifySubmission = () => {
     if (selectedMappingIdx === null || isLockedAnswer || !activeQuestion) return;
 
-    // 🌟 EXTRA DEFENSIVE DETECTOR: Handles both standard numeric indices and object array answers
+    // Support both numeric explicit indexing or inline boolean properties
     let correct = selectedMappingIdx === activeQuestion.correctAnswer;
     
-    // If your dataset relies on { text, correct: true } objects inside options instead of an index property:
     const chosenOption = activeQuestion.options[selectedMappingIdx];
     if (chosenOption && typeof chosenOption === 'object' && 'correct' in chosenOption) {
       correct = chosenOption.correct === true;
@@ -68,6 +69,42 @@ export default function QuizEngine({ questions, onQuizComplete }: Props) {
     }, 1200);
   };
 
+  // Converts standard text calculators expressions into valid KaTeX markup strings
+  const formatTextToLatex = (str: string): string => {
+    let clean = str;
+    // Replace inline expressions like sqrt(...) with \sqrt{...}
+    clean = clean.replace(/sqrt\((.*?)\)/g, '\\sqrt{$1}');
+    // Replace text fractions with standard LaTeX frac elements
+    clean = clean.replace(/(\d+)\/(\d+)/g, '\\frac{$1}{$2}');
+    return clean;
+  };
+
+  // Renders items containing mixed formula chunks perfectly inline
+  const MixedContentRenderer = ({ payload }: { payload: any }) => {
+    const rawString = typeof payload === 'string' ? payload : String(payload || "");
+    if (!rawString.trim()) return null;
+
+    // Split string into separate segment chunks by space to process tokens individually
+    const fragments = rawString.split(/(\s+)/);
+
+    return (
+      <span>
+        {fragments.map((chunk, index) => {
+          const trimmed = chunk.trim();
+          
+          // Detect math tokens (e.g. formulas with ^, [], sqrt, functions, equations)
+          const isMathExpr = /[\^=+\-*/\\{}()\[\]]|sqrt|f'\(x\)/.test(trimmed);
+          const isPlainWord = /^[a-zA-Z]{4,}$/.test(trimmed);
+
+          if (isMathExpr && !isPlainWord && trimmed.length > 0) {
+            return <InlineMath key={index} math={formatTextToLatex(trimmed)} />;
+          }
+          return <React.Fragment key={index}>{chunk}</React.Fragment>;
+        })}
+      </span>
+    );
+  };
+
   if (!activeQuestion) return null;
 
   if (showScoreSummary) {
@@ -93,15 +130,15 @@ export default function QuizEngine({ questions, onQuizComplete }: Props) {
       </div>
 
       <h4 style={{ fontSize: '1.1rem', color: '#fff', margin: '0 0 0.5rem 0', fontWeight: 600, lineHeight: '1.4' }}>
-        {activeQuestion.question}
+        {/* 🌟 FIXED: Reading from .q instead of .question */}
+        <MixedContentRenderer payload={activeQuestion.q} />
       </h4>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
         {activeQuestion.options.map((option, idx) => {
           const isChosen = selectedMappingIdx === idx;
           
-          // Determine the correct answer reference securely for style glowing triggers
-          let isCurrentOptionCorrect = idx === activeQuestion.correctAnswer;
+          let isCurrentOptionCorrect = false;
           if (option && typeof option === 'object' && 'correct' in option) {
             isCurrentOptionCorrect = option.correct === true;
           }
@@ -109,7 +146,6 @@ export default function QuizEngine({ questions, onQuizComplete }: Props) {
           const showSuccessGlow = isLockedAnswer && isCurrentOptionCorrect;
           const showFailureGlow = isLockedAnswer && isChosen && !isCurrentOptionCorrect;
 
-          // 🌟 THE OVERLAP RESOLVER: Safely unpacks the text layout whether it's a primitive string or data object
           const optionTextDisplay = option && typeof option === 'object' ? option.text : option;
 
           return (
@@ -133,7 +169,7 @@ export default function QuizEngine({ questions, onQuizComplete }: Props) {
                 fontWeight: isChosen || showSuccessGlow ? 600 : 500
               }}
             >
-              {optionTextDisplay}
+              <MixedContentRenderer payload={optionTextDisplay} />
             </button>
           );
         })}
