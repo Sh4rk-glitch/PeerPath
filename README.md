@@ -1,44 +1,43 @@
-# Peerpath Workspace ✦
+# Peerpath
 
-Peerpath is a high-fidelity, interactive digital learning platform built around cinematic physics engines, fluid kinetic typography, and persistent student tracking tracks. It seamlessly bridges a premium public storytelling presence with a comprehensive, analytics-driven student workspace layout context.
-
+Peerpath is an advanced digital learning system using cinematic physics engines, fluid kinetic typography, and continuous student tracking tracks. Peerpath provides a seamless connection between a premium public storytelling interface and a comprehensive student interface based on analytics.
 ---
 
 ## 🚀 Architectural Blueprint
 
-The platform's engine is split into two foundational layers driven by user authentication state parameters:
+The engine of the platform is divided into two essential layers powered by parameters of user authentication state:
 
-* **Anonymous Landing Space:** A smooth, unpinned interactive runway driven by GSAP scrolling triggers, custom multi-layered WebGL line fragment shaders (`Three.js`), and precision 3D gyroscopic element components.
-* **Authenticated Dashboard Core:** A secured client-side router web app (`React Router DOM`) synced directly with a remote PostgreSQL cluster backend via Supabase database mutations.
+* **Anonymous Landing Space:** A smooth and unpinned runway powered by GSAP scroll-triggering, custom multi-layer WebGL line fragment shaders (`Three.js`), and precise 3D gyroscopic element components.
+* **Authenticated Dashboard Kernel:** A secure router web app (`React Router DOM`) which is directly connected to the remote PostgreSQL database cluster backend through Supabase database mutations.
 
 ---
 
-## 🛠️ The Tech Stack Core
+## 🛠️ The Tech Stack Kernel
 
-* **Frontend Core:** React, TypeScript, Vite
+* **Frontend Kernel:** React, TypeScript, Vite
 * **Animation Dynamics:** GSAP (GreenSock Animation Platform) with custom ScrollTrigger architectures
-* **Backdrop Shader Matrices:** Three.js (WebGL ShaderMaterial implementation)
-* **Database & Auth Management:** Supabase (GoTrue authentication + secure cloud PostgreSQL tables)
-* **Platform Routing Engine:** React Router DOM (Dynamic sub-route outlets)
+* **Backdrop Shader Matrices:** Three.js (WebGL ShaderMaterial)
+* **Database & Authentication Service:** Supabase (GoTrue authentication + secure cloud PostgreSQL tables)
+* **Routing Engine of the Platform:** React Router DOM (dynamic sub-route outlets)
 
 ---
 
-## 📂 Core Repository Directory
+## 📂 Repository Directory
 
 ```text
  └── src/
      ├── components/
-     │   ├── Navbar.tsx               # Centered layout relative header navigation
-     │   ├── Hero.tsx                 # Continual interactive wave canvas gateway
-     │   ├── SignInSection.tsx        # Toggle-ready 3D glassmorphic auth card console
+     │   ├── Navbar.tsx               # Center layout with respect to header navigation
+     │   ├── Hero.tsx                 # Continuous interactive wave canvas gateway
+     │   ├── SignInSection.tsx        # Toggle-able 3D glassmorphic authentication card console
      │   ├── FloatingLines.tsx        # Vector line shader canvas engine (WebGL)
-     │   ├── ParticleFooter.tsx       # Secure high-contrast vignette canvas stack
-     │   ├── DashboardLayout.tsx      # Persistent sidebar workspace shell layout wrapper
-     │   ├── DashboardHome.tsx        # Live hub tracking metric dashboard with auto-snapping SVG timelines
-     │   ├── LessonsPage.tsx          # Multi-subject curriculum module preview grid
+     │   ├── ParticleFooter.tsx       # High contrast secure vignette canvas stack
+     │   ├── DashboardLayout.tsx      # Sidebar workspace shell layout wrapper
+     │   ├── DashboardHome.tsx        # Live hub tracking metrics dashboard with automatic snapping SVG timelines
+     │   ├── LessonsPage.tsx          # Multi-disciplinary curriculum module preview grid
      │   ├── PlannerPage.tsx          # Timeline management workspace
-     │   └── AnalyticsPage.tsx        # Advanced concept precision logs tracking maps
+     │   └── AnalyticsPage.tsx        # Concept precision logs tracking maps
      ├── lib/
      │   └── supabaseClient.ts        # Client initialization engine connection configuration
      └── pages/
-         └── Home.tsx                 # Central traffic router & feature-flag deploy gateway
+         └── Home.tsx                 # Traffic router and feature-flag deploy gateway
