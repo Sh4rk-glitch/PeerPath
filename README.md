@@ -1,6 +1,6 @@
 # Peerpath
 
-Peerpath is an advanced digital learning system using cinematic physics engines, fluid kinetic typography, and continuous student tracking tracks. Peerpath provides a seamless connection between a premium public storytelling interface and a comprehensive student interface based on analytics.
+### Peerpath is an advanced digital learning system using cinematic physics engines, fluid kinetic typography, and continuous student tracking tracks. Peerpath provides a seamless connection between a premium public storytelling interface and a comprehensive student interface based on analytics.
 ---
 
 ## 🚀 Architectural Blueprint
