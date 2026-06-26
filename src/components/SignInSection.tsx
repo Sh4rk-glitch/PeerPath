@@ -95,11 +95,15 @@ export default function SignInSection({ session, onSignOut }: Props) {
 
     if (isSignUp) {
       // --- SUPABASE SIGN UP PROTOCOL ---
+      const redirectToUrl = typeof window !== 'undefined' 
+      ? window.location.origin 
+      : 'https://peerpath2.vercel.app';
+
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
         options: {
-          emailRedirectTo: window.location.origin, // Sends user back to home page upon confirmation click
+          emailRedirectTo: redirectToUrl, // Sends user back to home page upon confirmation click
         }
       })
 
