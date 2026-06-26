@@ -1,9 +1,9 @@
-# Peerpath
+# Meet Peerpath
 
 ### Peerpath is an advanced digital learning system using cinematic physics engines, fluid kinetic typography, and continuous student tracking tracks. Peerpath provides a seamless connection between a premium public storytelling interface and a comprehensive student interface based on analytics.
 ---
 
-## 🚀 Architectural Blueprint
+## 🚀 Architectural Path
 
 The engine of the platform is divided into two essential layers powered by parameters of user authentication state:
 
@@ -12,7 +12,7 @@ The engine of the platform is divided into two essential layers powered by param
 
 ---
 
-## 🛠️ The Tech Stack Kernel
+## 🛠️ The Tech Stack Used
 
 * **Frontend Kernel:** React, TypeScript, Vite
 * **Animation Dynamics:** GSAP (GreenSock Animation Platform) with custom ScrollTrigger architectures
@@ -21,23 +21,3 @@ The engine of the platform is divided into two essential layers powered by param
 * **Routing Engine of the Platform:** React Router DOM (dynamic sub-route outlets)
 
 ---
-
-## 📂 Repository Directory
-
-```text
- └── src/
-     ├── components/
-     │   ├── Navbar.tsx               # Center layout with respect to header navigation
-     │   ├── Hero.tsx                 # Continuous interactive wave canvas gateway
-     │   ├── SignInSection.tsx        # Toggle-able 3D glassmorphic authentication card console
-     │   ├── FloatingLines.tsx        # Vector line shader canvas engine (WebGL)
-     │   ├── ParticleFooter.tsx       # High contrast secure vignette canvas stack
-     │   ├── DashboardLayout.tsx      # Sidebar workspace shell layout wrapper
-     │   ├── DashboardHome.tsx        # Live hub tracking metrics dashboard with automatic snapping SVG timelines
-     │   ├── LessonsPage.tsx          # Multi-disciplinary curriculum module preview grid
-     │   ├── PlannerPage.tsx          # Timeline management workspace
-     │   └── AnalyticsPage.tsx        # Concept precision logs tracking maps
-     ├── lib/
-     │   └── supabaseClient.ts        # Client initialization engine connection configuration
-     └── pages/
-         └── Home.tsx                 # Traffic router and feature-flag deploy gateway
