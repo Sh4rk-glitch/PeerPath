@@ -12,10 +12,10 @@ An interactive, student-built digital learning platform designed to help you mas
 
 Getting started with your workspace takes less than a minute:
 
-1. **Navigate to the Portal:** Scroll down to the bottom workspace track or click the **Sign In** button in the top-right corner of the navigation bar.
-2. **Toggle to Sign Up:** Click on the **"Create an account"** link at the bottom of the card.
-3. **Initialize Your Session:** Enter your email and a secure password. 
-4. **Begin Learning:** Start tracking your custom concept layout paths immediately!
+1. Scroll down to the bottom workspace track or click the **Sign In** button in the top-right corner of the navigation bar.
+2. Click on the **"Create an account"** link at the bottom of the card.
+3. Enter your email and a secure password. 
+4. Start tracking your custom concept layout paths immediately!
 
 ---
 
