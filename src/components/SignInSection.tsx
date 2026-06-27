@@ -13,7 +13,7 @@ type Props = {
 }
 
 export default function SignInSection({ session, onSignOut }: Props) {
-  const [isSignUp, setIsSignUp] = useState(false) // Dynamic switch tracking sign-in vs sign-up mode
+  const [isSignUp, setIsSignUp] = useState(false) 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [status, setStatus] = useState('')
@@ -29,6 +29,7 @@ export default function SignInSection({ session, onSignOut }: Props) {
     const ctx = gsap.context(() => {
       const masterTimeline = gsap.timeline({
         scrollTrigger: {
+          id: 'signin-trigger', // Bound for navbar target calculation
           trigger: trackRef.current,
           start: 'top top',
           end: 'bottom bottom',
@@ -76,7 +77,6 @@ export default function SignInSection({ session, onSignOut }: Props) {
     return () => ctx.revert()
   }, [])
 
-  // Clear states when toggling between sign up and sign in modes
   const handleModeToggle = () => {
     setIsSignUp(!isSignUp)
     setStatus('')
@@ -94,31 +94,19 @@ export default function SignInSection({ session, onSignOut }: Props) {
     setStatus(isSignUp ? 'Creating your account...' : 'Authenticating credentials...')
 
     if (isSignUp) {
-      // --- SUPABASE SIGN UP PROTOCOL ---
-      const redirectToUrl = typeof window !== 'undefined' 
-      ? window.location.origin 
-      : 'https://peerpath2.vercel.app';
-
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
-        options: {
-          emailRedirectTo: redirectToUrl, // Sends user back to home page upon confirmation click
-        }
       })
 
       if (error) {
         setStatus(error.message)
-      } else if (data.user && data.session === null) {
-        // If email confirmation is enabled in Supabase dashboard, session will be null initially
-        setStatus('Account created! Check your inbox for a verification link.')
+      } else {
+        setStatus('Successfully signed up! Welcome to PeerPath.')
         setEmail('')
         setPassword('')
-      } else {
-        setStatus('Successfully signed up and logged in!')
       }
     } else {
-      // --- SUPABASE SIGN IN PROTOCOL ---
       const { error } = await supabase.auth.signInWithPassword({
         email,
         password,
@@ -137,7 +125,7 @@ export default function SignInSection({ session, onSignOut }: Props) {
   }
 
   return (
-    <div ref={trackRef} className={styles.track}>
+    <div ref={trackRef} className={`${styles.track} signin-track-container`}>
       <section className={styles.section} id="signin">
         <div ref={layerRef} className={styles.glowingAtmosphere} />
 
@@ -192,12 +180,11 @@ export default function SignInSection({ session, onSignOut }: Props) {
               </button>
 
               {status && (
-                <p className={`${styles.status} ${status.includes('Check your inbox') || status.includes('Successfully') ? styles.success : styles.error}`}>
+                <p className={`${styles.status} ${status.includes('Successfully') ? styles.success : styles.error}`}>
                   {status}
                 </p>
               )}
 
-              {/* Dynamic Toggle Footer Links */}
               <div className={styles.toggleFooter}>
                 <span>
                   {isSignUp ? 'Already have an account?' : "Don't have an account yet?"}

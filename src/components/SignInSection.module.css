@@ -123,6 +123,11 @@ input:focus {
   margin-top: 0.5rem;
 }
 
+.scrollAnchor {
+  position: absolute;
+  top: -300px; /* Adjust this value up or down to change where it snaps! */
+  left: 0;
+}
 .submitButton,
 .signOutButton {
   border: none;

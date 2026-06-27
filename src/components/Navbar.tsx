@@ -1,5 +1,6 @@
 import type { Session } from '@supabase/supabase-js'
 import React, { useEffect, useState } from 'react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styles from './Navbar.module.css'
 
 type Props = {
@@ -25,10 +26,30 @@ export default function Navbar({ session, onSignOut }: Props) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const handleSignInClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    
+    // Finds the track parent element across the document footprint
+    const trackElement = document.querySelector('.signin-track-container')
+    
+    if (trackElement) {
+      const trigger = ScrollTrigger.getById('signin-trigger')
+      
+      if (trigger) {
+        // Direct jump to end coordinates to complete scrubbing animation cycles instantly
+        window.scrollTo({
+          top: trigger.end,
+          behavior: 'smooth'
+        })
+      } else {
+        // Safe structural layout fallback
+        trackElement.scrollIntoView({ behavior: 'smooth', block: 'end' })
+      }
+    }
+  }
+
   return (
     <header className={`${styles.navbar} ${(mounted || scrolled) ? styles.visible : ''}`}>
-      
-      {/* FIXED: Added your clean favicon logo asset directly alongside the title text */}
       <div className={styles.brandContainer}>
         <img 
           src="/favicon.png" 
@@ -42,7 +63,7 @@ export default function Navbar({ session, onSignOut }: Props) {
         <a href="#hero">Home</a>
         <a href="#how-it-works">How it works</a>
         <a href="#flow">Learning path</a>
-        <a href="#signin">Sign in</a>
+        <a href="#signin" onClick={handleSignInClick}>Sign in</a>
       </nav>
       <div className={styles.actions}>
         {session ? (
@@ -53,7 +74,7 @@ export default function Navbar({ session, onSignOut }: Props) {
             </button>
           </>
         ) : (
-          <a className={styles.buttonPrimary} href="#signin">
+          <a className={styles.buttonPrimary} href="#signin" onClick={handleSignInClick}>
             Sign in
           </a>
         )}
