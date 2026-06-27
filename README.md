@@ -1,23 +1,35 @@
 # Meet Peerpath
 
-### Peerpath is an advanced digital learning system using cinematic physics engines, fluid kinetic typography, and continuous student tracking tracks. Peerpath provides a seamless connection between a premium public storytelling interface and a comprehensive student interface based on analytics.
----
+An interactive, student-built digital learning platform designed to help you master complex subjects through custom layouts and concept path tracking.
 
-## 🚀 Architectural Path
+***
 
-The engine of the platform is divided into two essential layers powered by parameters of user authentication state:
+### [Try PeerPath Now: peerpathv2.vercel.app](https://peerpathv2.vercel.app)
 
-* **Anonymous Landing Space:** A smooth and unpinned runway powered by GSAP scroll-triggering, custom multi-layer WebGL line fragment shaders (`Three.js`), and precise 3D gyroscopic element components.
-* **Authenticated Dashboard Kernel:** A secure router web app (`React Router DOM`) which is directly connected to the remote PostgreSQL database cluster backend through Supabase database mutations.
+***
 
----
+## Quick Start: How to Sign Up
 
-## 🛠️ The Tech Stack Used
+Getting started with your workspace takes less than a minute:
 
-* **Frontend Kernel:** React, TypeScript, Vite
-* **Animation Dynamics:** GSAP (GreenSock Animation Platform) with custom ScrollTrigger architectures
-* **Backdrop Shader Matrices:** Three.js (WebGL ShaderMaterial)
-* **Database & Authentication Service:** Supabase (GoTrue authentication + secure cloud PostgreSQL tables)
-* **Routing Engine of the Platform:** React Router DOM (dynamic sub-route outlets)
+1. **Navigate to the Portal:** Scroll down to the bottom workspace track or click the **Sign In** button in the top-right corner of the navigation bar.
+2. **Toggle to Sign Up:** Click on the **"Create an account"** link at the bottom of the card.
+3. **Initialize Your Session:** Enter your email and a secure password. *(Email verification is completely disabled for instant workspace access).*
+4. **Begin Learning:** Start tracking your custom concept layout paths immediately!
 
 ---
+
+## Available Pathways
+
+PeerPath currently hosts dedicated learning tracks for advanced high school mathematics, featuring comprehensive lesson footprints and milestone tracking:
+
+* **AP Calculus AB**
+* **AP Calculus BC**
+
+> **More Classes Coming Soon!** We are actively building out new student-led pipelines across multiple subjects. Stay tuned for future updates.
+
+---
+
+Thank you for joining PeerPath's journey!
+
+**Shourya Mishra** *Founder & CEO, PeerPath*
