@@ -251,7 +251,7 @@ export default function SearchBar() {
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
                   <span style={{ fontWeight: 600, color: '#ffffff', fontSize: '1.15rem' }}>AP Calculus AB</span>
-                  <span style={{ fontSize: '0.7rem', color: '#58a6ff', background: 'rgba(88,166,255,0.1)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontWeight: 700 }}>CORE</span>
+                  <span style={{ fontSize: '0.7rem', color: '#58a6ff', background: 'rgba(88,166,255,0.1)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontWeight: 700 }}>Calc part 1</span>
                 </div>
                 <p style={{ margin: '0 0 1rem 0', color: 'rgba(255,255,255,0.4)', fontSize: '0.88rem', lineHeight: '1.5' }}>
                   Explore limits, core derivatives, basic integrals, and graphing models.
@@ -283,7 +283,7 @@ export default function SearchBar() {
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
                   <span style={{ fontWeight: 600, color: '#ffffff', fontSize: '1.15rem' }}>AP Calculus BC</span>
-                  <span style={{ fontSize: '0.7rem', color: '#a3f7bf', background: 'rgba(163,247,191,0.1)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontWeight: 700 }}>ADVANCED</span>
+                  <span style={{ fontSize: '0.7rem', color: '#a3f7bf', background: 'rgba(163,247,191,0.1)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontWeight: 700 }}>Calc part 2</span>
                 </div>
                 <p style={{ margin: '0 0 1rem 0', color: 'rgba(255,255,255,0.4)', fontSize: '0.88rem', lineHeight: '1.5' }}>
                   AB content plus advanced integration, infinite series, polar, and parametric math.
