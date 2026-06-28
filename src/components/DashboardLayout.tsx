@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from '../lib/supabaseClient'
 import { Link, Outlet, useLocation } from 'react-router-dom'
+import SearchBar from './SearchBar' // Import your state-managed search bar component
 import styles from './DashboardHome.module.css'
 
 type Props = {
@@ -17,7 +18,6 @@ export default function DashboardLayout({ session, onSignOut }: Props) {
   const [xpPoints, setXpPoints] = useState(0)
   const [streakCount, setStreakCount] = useState(0)
 
-  // FIXED: Changed to true to permanently unlock the links in the sidebar UI
   const ARE_SUBPAGES_RELEASED = true 
 
   useEffect(() => {
@@ -55,7 +55,6 @@ export default function DashboardLayout({ session, onSignOut }: Props) {
   return (
     <div className={`${styles.dashboardContainer} dashboardContainerGlobal`}>
       <aside className={styles.sidebar}>
-        
         <div className={styles.logoArea}>
           <img 
             src="/favicon.png" 
@@ -72,7 +71,6 @@ export default function DashboardLayout({ session, onSignOut }: Props) {
             <span className={styles.icon}>⌂</span> Home
           </Link>
 
-          {/* FIXED: The sidebar links will now render dynamically without hitting the lock blocking layer */}
           {ARE_SUBPAGES_RELEASED ? (
             <>
               <Link to="/lessons" className={`${styles.navLink} ${location.pathname === '/lessons' ? styles.active : ''}`}>
@@ -108,10 +106,11 @@ export default function DashboardLayout({ session, onSignOut }: Props) {
 
       <main className={styles.mainContent}>
         <header className={styles.topBar}>
-          <div className={styles.searchWrapper}>
-            <span className={styles.searchIcon}>🔍</span>
-            <input type="text" placeholder="Search lessons, formulas..." className={styles.searchInput} />
+          {/* MOVED: Injected the full fluid animated search bar into the layout shell directly */}
+          <div className={styles.searchWrapper} style={{ width: '100%', maxWidth: '400px', position: 'relative' }}>
+            <SearchBar />
           </div>
+          
           <div className={styles.headerStatus}>
             <div className={styles.statusBadge}>🔥 <span className={styles.streakValueDisplay}>{streakCount}</span></div>
             <div className={styles.statusBadge}>💎 <span className={styles.xpValueDisplay}>{xpPoints} XP</span></div>
